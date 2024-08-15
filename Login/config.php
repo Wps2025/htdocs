@@ -13,6 +13,6 @@ $conexao = new mysqli($dbhost,$dbUsername,$dbPassword,$dbName);
     }
     else
     {
-        echo "Conexão efetuada com sucesso!"
+        echo "Conexão efetuada com sucesso!";
     }
 ?>
