@@ -4,7 +4,7 @@
     {
         print_r($_POST['nome']);
         print_r($_POST['login']);
-        print_r($_POST['password']);
+        print_r($_POST['senha']);
     }
 
 ?>
