@@ -1,3 +1,15 @@
+<?php
+
+    if(isset($_POST['submit']))
+    {
+        print_r($_POST['nome']);
+        print_r($_POST['login']);
+        print_r($_POST['password']);
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -9,7 +21,7 @@
 <body>
     <a href="login.html">Volta</a>
     <div class="box">
-        <form action="">
+        <form action="formulario-php" method="POST">
             <fieldset>
                 <legend><b>Formulário do candidato</b></legend>
                 <br><br>
