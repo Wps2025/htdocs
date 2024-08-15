@@ -15,4 +15,3 @@ $conexao = new mysqli($dbhost,$dbUsername,$dbPassword,$dbName);
     {
         echo "Conexão efetuada com sucesso!";
     }
-?>
