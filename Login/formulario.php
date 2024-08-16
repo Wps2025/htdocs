@@ -2,11 +2,11 @@
 
     if(isset($_POST['submit']))
     {
-        print_r('Nome: ' . $_POST['nome']);
+        print_r($_POST['nome']);
         print_r('<br>');
-        print_r('E-mail: ' . $_POST['email']);
+        print_r($_POST['email']);
         print_r('<br>');
-        print_r('Senha: ' . $_POST['senha']);
+        print_r($_POST['senha']);
     }
 
 ?>
