@@ -4,7 +4,7 @@
     {
         print_r('Nome: ' . $_POST['nome']);
         print_r('<br>');
-        print_r('E-mail: ' . $_POST['login']);
+        print_r('E-mail: ' . $_POST['email']);
         print_r('<br>');
         print_r('Senha: ' . $_POST['senha']);
     }
@@ -22,7 +22,7 @@
 <body>
     <a href="login.html">Volta</a>
     <div class="box">
-        <form action="formulario-php" method="POST">
+        <form action="formulario.php" method="POST">
             <fieldset>
                 <legend><b>Formulário do candidato</b></legend>
                 <br><br>
@@ -32,8 +32,8 @@
                         </div>
                         <br>
                     <div class="inputBox">
-                        <input type="email" name="login" id="login" class="inputUser" required>
-                            <label for="login" class= "labelInput">Digite seu e-mail</label>
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                            <label for="email" class= "labelInput">Digite seu e-mail</label>
                             </div>
                             <br>
                     <div class="inputBox">
