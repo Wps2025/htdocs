@@ -100,8 +100,6 @@ legend{
 </head>
 <body>
     <div class="box">
-        <a href="login.php">Volta</a>
-
         <form action="formulario.php" method="POST">
             <fieldset>
                 <legend><b>Formulário do candidato</b></legend>
@@ -125,5 +123,7 @@ legend{
             </fieldset>
         </form>
     </div>
+    <a href="login.php">Volta</a>
+
 </body>
 </html>
