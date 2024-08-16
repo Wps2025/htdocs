@@ -9,8 +9,8 @@
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(45deg, red, yellow);
     color: black;
-}
-a{
+    }
+        a{
     color: black;
     text-decoration: none;
     background-image: linear-gradient(40deg, yellow, red);
@@ -20,12 +20,12 @@ a{
     font-size: 14px;
     text-align: center;
     border-bottom: 5px solid black;
-}
-a1:hover{
+    }
+        a1:hover{
     color: red;
     cursor: pointer;
-}
-div{
+    }
+        div{
     background-image: linear-gradient(45deg, yellow, red);
     position: absolute;
     top: 50%;
@@ -33,15 +33,15 @@ div{
     transform: translate(-50%, -50%);
     padding: 60px;
     border-radius: 15px;
-}
-input{
+    }
+        input{
     padding: 15px;
     border: none;
     outline: none;
     font-size: 15px;
     width: 88%;
-}
-.inputSubmit{
+    }
+        .inputSubmit{
     background-image: linear-gradient(45deg, yellow, red);
     border: none;
     padding: 15px;
@@ -50,10 +50,10 @@ input{
     color: black;
     font-size: 15px;
     cursor: pointer;
-}
-.inputSubmit:hover{
+    }
+        .inputSubmit:hover{
     background-image: linear-gradient(45deg, red, yellow);
-}
+    }
     </style>
 </head>
 <body>
