@@ -69,7 +69,7 @@
                 <br><br>
                 <a1 href="">Esqueci minha senha</a1>
                 <br><br><br>
-                <a href="formulario.html">Cadastre-se</a>
+                <a href="formulario.php">Cadastre-se</a>
         </form>
     </div>
 </body>
