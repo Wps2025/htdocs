@@ -99,7 +99,7 @@ legend{
 </style>
 </head>
 <body>
-    <a href="login.html">Volta</a>
+    <a href="login.php">Volta</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>

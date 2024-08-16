@@ -57,7 +57,7 @@
     </style>
 </head>
 <body>
-    <a href="home.html">HOME</a>
+    <a href="home.php">HOME</a>
     <div class="box">
         <form action="">
             <h1>Login</h1>

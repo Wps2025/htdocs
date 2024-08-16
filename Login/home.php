@@ -33,7 +33,7 @@ a{
     <h1>Sejam bem-vindos</h1>
     <p>Instrutor William</p>
     <div class="box">
-        <a href="login.html">Login</a>
+        <a href="login.php">Login</a>
     </div>
 </body>
 </html>
