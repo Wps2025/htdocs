@@ -1,7 +1,7 @@
 <?php
 
-//if(isset($_POST['submit']))
-//{
+if(isset($_POST['submit']))
+{
     //print_r($_POST['nome']);
     //print_r('<br>');
     //print_r($_POST['email']);
@@ -17,7 +17,7 @@ $senha = $_POST["senha"];
 
 $result = mysqli_query($conexao,"INSERT INTO usuario(nome,email,senha)VALUES ('$nome','$email','$senha')");
 
-//}
+}
 
 ?>
 
