@@ -9,10 +9,10 @@
 
     //if($conexao->connect_errno)
     //{
-      //  echo "Erro";
+    //    echo "Erro";
     //}   //TESTE DE CONEXÃO MYSQLI
     //else
     //{
-      //  echo "Conexão efetuada com sucesso!";
+    //    echo "Conexão efetuada com sucesso!";
     //}
 ?>
