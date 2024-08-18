@@ -1,13 +1,17 @@
 <?php
 
-include_once("config.php");
+    if(isset($_POST["submit"]))
+    {
 
-$nome=$_POST['nome'];
-$email=$_POST['email'];
-$senha=$_POST['senha'];
+    include_once('config.php');
 
-$sql= "INSERT INTO usuario(nome, email, senha)
-        VALUES ('$nome', '$email', '$senha')";
+    $nome=$_POST['nome'];
+    $email=$_POST['email'];
+    $senha=$_POST['senha'];
+
+    $result= mysqli_query($conexao, "INSERT INTO usuario(nome, email, senha)
+        VALUES ('$nome', '$email', '$senha')");
+}
 
 ?>
 
