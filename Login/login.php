@@ -1,9 +1,3 @@
-<?php
-
-$array=array("email",);
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>

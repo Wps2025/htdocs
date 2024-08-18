@@ -12,7 +12,7 @@
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-       //print_r('Email: ' . $email);|//Testando as minhas variáveis
+        //print_r('Email: ' . $email);|//Testando as minhas variáveis
         //print_r('<br>');            |//email e senha que está chegando
         //print_r('Senha: ' . $senha);|//os dados.
 
@@ -27,18 +27,13 @@
         //Irá verificar quantidades de linhas se for menor de 1 "Não existe"
         //| Mas se for maior do que 0 "Existe".
         if(mysqli_num_rows($result) < 1){
-            
-            //print_r('Não existe');
 
-            header('location: login.php');
+            header('Location: login.php');
         }
             
             else{
 
-            //print_r('Existe');
-
-            header('location: sitemaS.php');
-
+            header('Location: sistemaS.php');
 
         }
 
