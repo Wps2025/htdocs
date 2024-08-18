@@ -1,13 +1,13 @@
 <?php
 
-include("config.php");
+include_once("config.php");
 
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+$nome=$_POST['nome'];
+$email=$_POST['email'];
+$senha=$_POST['senha'];
 
-$sql = "INSERT INTO usuario(nome, email, senha)
-        VALUES ('$nome,'$email','$senha')";
+$sql= "INSERT INTO usuario(nome, email, senha)
+        VALUES ('$nome', '$email', '$senha')";
 
 ?>
 
@@ -115,11 +115,13 @@ legend{
                             </div>
                             <br>
                     <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class= "labelInput">Criar uma Senha</label>
-                </div>
-                <br>
+                        <input type="password" name="senha" id="senha" class="inputUser" required>
+                        <label for="senha" class= "labelInput">Criar uma Senha</label>
+                        </div>
+                        <br>
                 <input type="submit" nome="submit" id="submit">
+                    </div>
+                    <br>
             </fieldset>
         </form>
     </div>
