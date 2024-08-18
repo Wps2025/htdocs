@@ -22,6 +22,11 @@ div{
 h1{
     text-align: center;
 }
+p{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
 a{
     color: black;
     text-decoration: none;

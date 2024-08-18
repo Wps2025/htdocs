@@ -59,7 +59,7 @@
 <body>
     <a href="home.php">HOME</a>
     <div class="box">
-        <form action="">
+        <form action="testLongin.php" method="POST">
             <h1>Login</h1>
                 <input type="text" nome= "email" placeholder="E-mail">
                 <br><br>
