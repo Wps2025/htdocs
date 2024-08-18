@@ -5,5 +5,5 @@
     $dbPassword = '';
     $dbName = 'formulario-cadastro';
 
-    $conexao = mysqli_connect($dbhost,$dbUsername,$dbPassword,$dbName);
+    $conexao = new mysqli($dbhost,$dbUsername,$dbPassword,$dbName);
 
