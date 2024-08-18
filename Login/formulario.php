@@ -1,7 +1,7 @@
 <?php
 
-    if(isset($_POST['submit']))
-{
+    //if(isset($_POST['submit']))
+//{
 
     include_once('config.php');
 
@@ -11,7 +11,7 @@
 
     $result= mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
         VALUES ('$nome', '$email', '$senha')");
-}
+//}
 
 ?>
 
