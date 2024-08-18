@@ -11,7 +11,6 @@
     color: black;
 }
 div{
-    color: black;
     text-decoration: none;
     position: absolute;
     top: 30%;
@@ -22,21 +21,15 @@ div{
 h1{
     text-align: center;
 }
-p{
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-}
 a{
     color: black;
     text-decoration: none;
     font-size: 30px;
-}
+    }
     </style>
 </head>
 <body>
     <h1>Sejam bem-vindos</h1>
-    <p>Instrutor William</p>
     <div class="box">
         <a href="login.php">Login</a>
     </div>
