@@ -1,4 +1,7 @@
 {
     "commentTranslate.multiLineMerge": true,
-    "sqltools.connections": []
+    "sqltools.connections": [],
+    "cSpell.words": [
+        "usuarios"
+    ]
 }
