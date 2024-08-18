@@ -1,17 +1,23 @@
 <?php
+    session_start();
 
-    //if(isset($_POST['submit']))
-//{
-
-    include_once('config.php');
+    if(isset($_POST['submit']))
+    {
+        //print_r('Nome: ' . $_POST['nome']);
+        //print_r('<br>');
+        //print_r('Email: ' . $_POST['email']);
+        //print_r('<br>');
+        //print_r('Senha: ' . $_POST['senha']);
+    
+include_once ('config.php');
 
     $nome=$_POST['nome'];
     $email=$_POST['email'];
     $senha=$_POST['senha'];
 
     $result= mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
-        VALUES ('$nome', '$email', '$senha')");
-//}
+    VALUES ('$nome', '$email', '$senha')");
+}
 
 ?>
 
@@ -123,8 +129,8 @@ legend{
                         <label for="senha" class= "labelInput">Criar uma Senha</label>
                         </div>
                         <br>
-                <input type="submit" nome="submit" id="submit">
-                    </div>
+                <input type="submit" name="submit" id="submit">
+                </div>
                     <br>
             </fieldset>
         </form>

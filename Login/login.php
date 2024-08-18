@@ -1,3 +1,9 @@
+<?php
+
+$array=array("email",);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -61,11 +67,11 @@
     <div class="box">
         <form action="testLogin.php" method="POST">
             <h1>Login</h1>
-                <input type="text" nome= "email" placeholder="E-mail">
+                <input type="text" name= "email" placeholder="E-mail">
                 <br><br>
-                <input type="password" nome= "senha" placeholder="Senha">
+                <input type="password" name= "senha" placeholder="Senha">
                 <br><br>
-                <input class="inputSubmit" type="submit" nome="submit" value="Enviar">
+                <input class="inputSubmit" type="submit" name="submit" value="Enviar">
                 <br><br>
                 <a1 href="">Esqueci minha senha</a1>
                 <br><br><br>
