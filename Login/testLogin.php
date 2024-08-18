@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     //print_r($_REQUEST); São os parâmentro que estão vindo,
     // do formulario do meu login.
 
@@ -28,11 +30,15 @@
         //| Mas se for maior do que 0 "Existe".
         if(mysqli_num_rows($result) < 1){
 
+            unset($_SESSION['email']);// Caso não existe email e senha, será 
+            unset($_SESSION['senha']);// | destruido.
             header('Location: login.php');
         }
             
             else{
 
+            $_SESSION['email'] = $email;// Caso existir o email e senha,
+            $_SESSION['senha'] = $senha;// terá acesso.
             header('Location: sistemaS.php');
 
         }
