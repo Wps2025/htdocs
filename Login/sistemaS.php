@@ -8,7 +8,6 @@
         header('Location: login.php');
     }
     $logado= $_SESSION['email'];
-
 ?>
 
 <!DOCTYPE html>
