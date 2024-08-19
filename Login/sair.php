@@ -1,10 +1,4 @@
 <?php
-
-session_start();
-
-unset($_SESSION['email']);
-unset($_SESSION['senha']);
-
-header('Location: home.php');
-
-?>
+        session_start();
+        session_destroy();
+        header('Location: login.php');

@@ -67,7 +67,7 @@
                 <br>
     </fieldset>
         <div class="d-flex">
-            <a href="sair.php">Sair</a>
+            <a href="sair.php" >Sair</a>
         </div>
 </body>
 </html>
