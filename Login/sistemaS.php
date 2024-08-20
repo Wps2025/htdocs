@@ -19,7 +19,7 @@
     <style>
     body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(45deg, red, yellow);
+    background-image: linear-gradient(80deg, red, yellow);
     color: black;
     }
 
@@ -27,8 +27,7 @@
     position: absolute;
     padding: 10px;
     left: 20px;
-    background-image: linear-gradient(50deg, yellow, red);
-    border-radius: 10px;
+
     }
 
     fieldset{
@@ -53,15 +52,16 @@
     top: 50%;
     left: 50%;
     }
-    
+
     </style>
 </head>
 <body>
-    <h1>Acessou o sistema </h1>
+    <h1>Sejam bem-vindos!<br><br>
+        <br><br>Menu principal</h1>
     <fieldset>
         <div>
-            <a href="theory.php">Teórica</a>
-            <a href="practical.php">Prático</a>
+            <a href="theory.php">Aulas Teóricas</a>
+            <a href="practical.php">Aulas Práticas</a>
                 </div>
                 <br>
     </fieldset>
