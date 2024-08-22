@@ -9,6 +9,7 @@ if((!isset($_SESSION['email']) == true ) and (!isset($_SESSION['senha']) == true
 
     header('Location: theory.php');
     header('Location: login.php');
+    exit();
 }
 
 ?>
