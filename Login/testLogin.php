@@ -30,7 +30,7 @@
         //| Mas se for maior do que 0 "Existe".
         if(mysqli_num_rows($result) < 1){
 
-            unset($_SESSION['email']);// Caso não existe email e senha, será 
+            unset($_SESSION['email']);// Caso não existe email e senha, será
             unset($_SESSION['senha']);// | destruido.
             header('Location: login.php');
         }
