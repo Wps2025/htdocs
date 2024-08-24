@@ -12,7 +12,6 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
         $senha = $_POST['senha'];
 
         include_once('formulario.php');
-
                 if(password_verify($senha, $_POST['senha'])){
         echo'logado!';
                 } else{
