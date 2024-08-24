@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    $senha= password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
     $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
     VALUES ('$nome', '$email', '$senha')");
