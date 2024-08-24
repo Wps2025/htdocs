@@ -12,6 +12,7 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];
+    $senha_hash = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
 
 
