@@ -12,7 +12,6 @@ session_start();
 
             $email = $_POST['email'];
             $senha = $_POST['senha'];
-            $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
                 //print_r('Email: ' . $email);|//Testando as minhas variáveis
                 //print_r('<br>');            |//email e senha que está chegando

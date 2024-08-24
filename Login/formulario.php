@@ -14,7 +14,15 @@ if (isset($_POST['submit'])) {
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+
+    if(password_verify($_POST['senha'], $senha)){
+        
+        echo "senha confere";
+        }else{
+            echo "senha não confere";
+        }
+
 
     $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
     VALUES ('$nome', '$email', '$senha')");
