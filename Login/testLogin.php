@@ -11,6 +11,15 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
+
+        include_once('formulario.php');
+                if(password_verify($senha, $_POST['senha'])){
+        echo'logado!';
+                } else{
+        echo 'senha ou email incorreto';
+        }
+
+        
         include_once('formulario.php');
                 if(password_verify($senha, $_POST['senha'])){
         echo'logado!';
@@ -32,13 +41,16 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
             unset($_SESSION['email']); // Caso não existe email e senha, será
             unset($_SESSION['senha']); // | destruido.
         header('Location: login.php');
+        exit();
         } else {
             $_SESSION['email'] = $email; // Caso existir o email e senha,
             $_SESSION['senha'] = $senha; // terá acesso.
         header('Location: sistemaS.php');
+        exit();
         }
 } else {
-        header('location: login.php'); //Caso não existir uma variavel,
+        header('location: login.php');
+        exit(); //Caso não existir uma variavel,
          //não vai deixar acessa o sistema. Irá retornar para o sistema login.
 }
 
