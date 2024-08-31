@@ -13,21 +13,10 @@ if (isset($_POST['submit'])) {
     include_once('config.php');
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha= $_POST['senha'];
-    
-    include_once('config.php');
-$verify = password_verify($senha, $senha_criptor);
-if($verify){
-    echo"logado";
-    session_start();
-    $_SESSION['usuario'] = $usuario;
-    header("Location: sistemaS.php");
-    exit();
-}else{
-    echo "não logado";
-}
+    $senha = $_POST['senha'];
+
     $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
-    VALUES ('$nome', '$email', '$senha_criptor')");
+    VALUES ('$nome', '$email', '$senha')");
 
 
     //header('Location: login.php');
