@@ -59,7 +59,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if (password_verify($senha, $row['senha'])) {
             echo "Login realizado com sucesso!";
-
            //header('Location: sistemaS.php');
 
         } else {
