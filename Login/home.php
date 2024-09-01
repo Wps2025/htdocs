@@ -31,7 +31,7 @@ a{
 <body>
     <h1>Sejam bem-vindos</h1>
     <div class="box">
-        <a href="login.php">Login</a>
+        <a href="login.php">Home</a>
     </div>
 </body>
 </html>
