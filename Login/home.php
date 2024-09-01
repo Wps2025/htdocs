@@ -26,16 +26,19 @@ a{
     text-decoration: none;
     font-size: 30px;
     }
+
     </style>
+
 </head>
 <body>
     <h1>Sejam bem-vindos</h1>
     <div class="box">
-        <a href="login.php">Home</a>
+        <a href="login.php">Login</a>
         <?php
-                if (isset($_GET['erro'])) {
-                echo "<p style='color:red;'>Usuário não encontrado!</p>";
-                }
+            if (isset($_GET['erro'])) {
+            echo "<p style='color:black;font:size15px;px;text-align:center;
+            '>Usuário não encontrado!</p>";
+            }
         ?>
     </div>
 </body>

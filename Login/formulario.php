@@ -1,26 +1,5 @@
 <?php
-//session_start();
-
-//if (isset($_POST['submit'])) {
-    //print_r('Nome: ' . $_POST['nome']);
-    //print_r('<br>');
-    //print_r('Email: ' . $_POST['email']);
-    //print_r('<br>');
-    //print_r('Senha: ' . $_POST['senha']);
-
-    //include_once('config.php');
-    //$nome = $_POST['nome'];
-    //$email = $_POST['email'];
-    //$senha = $_POST['senha'];
-
-    //$result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
-    //VALUES ('$nome', '$email', '$senha')");
-
-
-
-//}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);

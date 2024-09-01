@@ -62,18 +62,24 @@
         <form action="testLogin.php" method="POST">
             <h1>Login</h1>
                 <input type="text" name= "email" placeholder="E-mail">
-                <br><br>
+                    <br>
+                        <br>
                 <input type="password" name= "senha" placeholder="Senha">
-                <br><br>
+                    <br>
+                        <br>
                 <input class="inputSubmit" type="submit" name="submit" value="Enviar">
-                <br><br>
+                    <br>
+                        <br>
                 <a1 href="">Esqueci minha senha</a1>
-                <br><br><br>
+                    <br>
+                        <br>
+                            <br>
                 <a href="formulario.php">Cadastre-se</a>
                 <?php
-                        if (isset($_GET['erro'])) {
-                        echo "<p style='color:red;'>Senha incorreta!</p>";
-                        }
+                    if (isset($_GET['erro'])) {
+                    echo "<p style='color:red;font:size20px;px;text-align:center;'
+                    >Senha ou E-mail incorreta!</p>";
+                    }
                 ?>
         </form>
     </div>
