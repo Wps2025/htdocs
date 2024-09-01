@@ -32,6 +32,11 @@ a{
     <h1>Sejam bem-vindos</h1>
     <div class="box">
         <a href="login.php">Home</a>
+        <?php
+                if (isset($_GET['erro'])) {
+                echo "<p style='color:red;'>Usuário não encontrado!</p>";
+                }
+        ?>
     </div>
 </body>
 </html>

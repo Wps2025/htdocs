@@ -150,28 +150,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="box">
         <form method="POST" action="formulario.php">
             <fieldset>
-                <legend><b>Formulário do candidato</b></legend>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome Completo</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Digite seu e-mail</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Criar uma Senha</label>
-                </div>
-                <br>
-                <input type="submit" name="submit" id="submit">
-    </div>
-    <br>
-    </fieldset>
-    </form>
+                    <legend><b>Formulário do candidato</b></legend>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome Completo</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">Digite seu e-mail</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="password" name="senha" id="senha" class="inputUser" required>
+                        <label for="senha" class="labelInput">Criar uma Senha</label>
+                    </div>
+                    <br>
+                    <input type="submit" name="submit" id="submit">
+                    </div>
+                    <br>
+                </fieldset>
+        </form>
     </div>
     <a href="login.php">Volta</a>
 

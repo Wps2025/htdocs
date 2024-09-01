@@ -1,14 +1,14 @@
 <?php
-    session_start();
+    //session_start();
     //print_r($_SESSION);
-    if((!isset($_SESSION['email']) == true ) and (!isset($_SESSION['senha']) == true)){
+    //if((!isset($_SESSION['email']) == true ) and (!isset($_SESSION['senha']) == true)){
         
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('Location: login.php');
-        exit();
-}
-    $logado= $_SESSION['email'];
+        //unset($_SESSION['email']);
+        //unset($_SESSION['senha']);
+        //header('Location: login.php');
+        //exit();
+//}
+    //$logado= $_SESSION['email'];
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +58,7 @@
 </head>
 <body>
     <h1>Sejam bem-vindos!<br><br>
-        <br><br>Menu principal</h1>
+        <br><br>Login realizado com sucesso!</h1>
     <fieldset>
         <div>
             <a href="theory.php">Aulas Teóricas</a>

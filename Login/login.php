@@ -70,6 +70,11 @@
                 <a1 href="">Esqueci minha senha</a1>
                 <br><br><br>
                 <a href="formulario.php">Cadastre-se</a>
+                <?php
+                        if (isset($_GET['erro'])) {
+                        echo "<p style='color:red;'>Senha incorreta!</p>";
+                        }
+                ?>
         </form>
     </div>
 </body>

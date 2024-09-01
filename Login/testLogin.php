@@ -58,16 +58,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($senha, $row['senha'])) {
+
             echo "Login realizado com sucesso!";
-           //header('Location: sistemaS.php');
+           header("Location: sistemaS.php"); 
 
         } else {
             echo "Senha incorreta!";
-            //header('Location: login.php');
+            header("Location: login.php?erro=1");
         }
     } else {
         echo "Usuário não encontrado!";
-        //header('Location: home.php');
+        header("Location: home.php?erro=1");
 
     }
 
