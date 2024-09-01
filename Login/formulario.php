@@ -1,24 +1,47 @@
 <?php
-session_start();
+//session_start();
 
-if (isset($_POST['submit'])) {
+//if (isset($_POST['submit'])) {
     //print_r('Nome: ' . $_POST['nome']);
     //print_r('<br>');
     //print_r('Email: ' . $_POST['email']);
     //print_r('<br>');
     //print_r('Senha: ' . $_POST['senha']);
 
-    include_once('config.php');
+    //include_once('config.php');
+    //$nome = $_POST['nome'];
+    //$email = $_POST['email'];
+    //$senha = $_POST['senha'];
+
+    //$result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
+    //VALUES ('$nome', '$email', '$senha')");
+
+
+
+//}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, senha)
-    VALUES ('$nome', '$email', '$senha')");
+    // Conexão com o banco de dados
+    include("config.php");
+    if ($conn->connect_error) {
+        die("Conexão falhou: " . $conn->connect_error);
+    }
 
+    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome','$email', '$senha')";
+    if ($conn->query($sql) === TRUE) {
 
-    //header('Location: login.php');
-    //exit();
+            header('Location: login.php');
+            exit();
+
+        } else {
+        echo "Erro: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
 }
 
 ?>
@@ -125,7 +148,7 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form method="POST" action="formulario.php">
             <fieldset>
                 <legend><b>Formulário do candidato</b></legend>
                 <br><br>
