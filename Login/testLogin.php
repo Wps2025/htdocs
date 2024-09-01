@@ -25,15 +25,18 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
         unset($_SESSION['email']); // Caso não existe email e senha, será
         unset($_SESSION['senha']); // | destruido.
         header('Location: login.php');
+        exit();
         
     } else {
         $_SESSION['email'] = $email; // Caso existir o email e senha,
         $_SESSION['senha'] = $senha; // terá acesso.
         header('Location: sistemaS.php');
+        exit();
         
     }
 } else {
     header('location: login.php');
+    exit();
      //Caso não existir uma variavel,
     //não vai deixar acessa o sistema. Irá retornar para o sistema login.
 }
