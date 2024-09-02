@@ -12,16 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql =  "SELECT * FROM usuarios WHERE email = '$email'";
     $result = $conn->query($sql);
 
+    
+
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        if(!isset($_SESSION)){
-            session_start();
-            $_SESSION['email'] = $email['email'];
 
-            header("Location: sistemaS.php");
-        }
-        if (password_verify($senha, $row['senha'])) {
-
+        if (password_verify($senha, $row['senha'])) {  
 
            header("Location: sistemaS.php");
            exit();
@@ -37,8 +33,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
 
     }
+
+    if(!isset($_SESSION)){
+        session_start();
+        $_SESSION['email'] = $email['email'];
+        $_SESSION['senha'] = $senha['senha'];
+
+        header("Location: testLogin.php");
+}
     $conn->close();
 }
+
 ?>
 
 
