@@ -46,18 +46,22 @@ include("protect.php");
 
     </style>
 </head>
-<body>
-    <h1>Sejam bem-vindos!<br><br>
-        <br><br>Login realizado com sucesso!</h1>
-    <fieldset>
-        <div>
-            <a href="theory.php">Aulas Teóricas</a>
-            <a href="practical.php">Aulas Práticas</a>
+    <body>
+        <h1>Sejam bem-vindos!<br><br>
+            <br><br>Login realizado com sucesso!</h1>
+
+            <fieldset>
+                <div>
+                    <a href="theory.php">Aulas Teóricas</a>
+                    <a href="practical.php">Aulas Práticas</a>
                 </div>
-                <br>
-    </fieldset>
+                 <br>
+            </fieldset>
+            
         <div class="d-flex">
             <a href="logout.php">Sair</a>
         </div>
-</body>
+
+    </body>
 </html>
+

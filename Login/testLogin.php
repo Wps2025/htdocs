@@ -1,10 +1,12 @@
 <?php
+    
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
     // Conexão com o banco de dados
-    include("config.php"); 
+    include("config.php");
+    //Verificar a conexão 
     if ($conn->connect_error) {
         die("Conexão falhou: " . $conn->connect_error);
     }
@@ -13,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
 
     
-
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
@@ -34,13 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     }
 
-    if(!isset($_SESSION)){
-        session_start();
-        $_SESSION['email'] = $email['email'];
-        $_SESSION['senha'] = $senha['senha'];
-
-        header("Location: testLogin.php");
-}
     $conn->close();
 }
 

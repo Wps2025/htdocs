@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Conexão com o banco de dados
     include("config.php");
+    //Verificar a conexão
     if ($conn->connect_error) {
         die("Conexão falhou: " . $conn->connect_error);
     }
