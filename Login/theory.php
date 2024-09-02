@@ -1,9 +1,15 @@
 <?php
-    session_start();
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    
-    if (session_destroy()) {
-        header("Location: home.php");
-    }
-}
+
 ?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Olá mundo!</h1>
+</body>
+</html>

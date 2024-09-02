@@ -1,11 +1,14 @@
 <?php
-    session_start();
-    session_destroy();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    
-
-}
 ?>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+</body>
+</html>

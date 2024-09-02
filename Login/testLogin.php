@@ -14,12 +14,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
+        if(!isset($_SESSION)){
+            session_start();
+            $_SESSION['email'] = $email['email'];
+
+            header("Location: sistemaS.php");
+        }
         if (password_verify($senha, $row['senha'])) {
+
 
            header("Location: sistemaS.php");
            exit();
 
         } else {
+
             header("Location: login.php?erro=1");
             exit();
         }
