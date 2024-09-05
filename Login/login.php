@@ -79,7 +79,7 @@
                     <br>
                         <br>
                             <br>
-                <a href="formulario.php">Cadastre-se</a>
+                <a href="./form/formulario.html">Cadastre-se</a>
                 <?php
                     if (isset($_GET['erro'])) {
                     echo "<p style='color:red;font:size20px;px;text-align:center;'
