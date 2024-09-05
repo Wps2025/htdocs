@@ -8,41 +8,41 @@ include("protect.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema | logado </title>
     <style>
-    body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(80deg, red, yellow);
-    color: black;
-    }
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(80deg, red, yellow);
+        color: black;
+        }
 
-    h1{
-    position: absolute;
-    padding: 10px;
-    left: 20px;
+        h1{
+        position: absolute;
+        padding: 10px;
+        left: 20px;
 
-    }
+        }
 
-    fieldset{
-    border: 2px solid rgba(206, 81, 23, 0.952);
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 50px;
-    border-radius: 15px;
-    }
-    a{
+        fieldset{
+        border: 2px solid rgba(206, 81, 23, 0.952);
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+        border-radius: 15px;
+        }
+        a{
         color: black;
         text-decoration: none;
         padding: 50px;
         font-size: 30px;
-    }
-    .d-flex{
-    text-align: right;
-    padding: 20px;
-    top: 50%;
-    left: 50%;
-    }
+        }
+        .d-flex{
+        text-align: right;
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        }
 
     </style>
 </head>
