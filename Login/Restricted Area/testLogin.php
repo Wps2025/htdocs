@@ -20,17 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (password_verify($senha, $row['senha'])) {  
 
-           header("Location: Login/System/sistemaS.html");
+           header('Location: Login/System/sistemaS.html');
            exit();
 
         } else {
 
-            header("Location: /Loginn/login.html?erro=1");
+            header('ocation: /Loginn/login.html?erro=1');
             exit();
         }
     } else {
         echo "Usuário não encontrado!";
-        header("Location: /Home/home.html?erro=1");
+        header('Location: /Home/home.html?erro=1');
         exit();
 
     }

@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome','$email', '$senha')";
     if ($conn->query($sql) === TRUE) {
 
-            header('Location: login.php');
+            header('Location: /Loginn/login.php');
             exit();
 
         } else {
