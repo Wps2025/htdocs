@@ -3,7 +3,7 @@
         session_start();
     }
         session_destroy();
-        header("Location: ./Loginn/login.html");
+        header("Location: /Loginn/login.html");
         exit;
 ?>
 
