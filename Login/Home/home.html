@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE | HOME</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <h1>Sejam bem-vindos</h1>
+    <div class="box">
+        <a href="login.php">Login</a>
+        <?php
+            if (isset($_GET['erro'])) {
+            echo "<p style='color:black;font:size15px;px;text-align:center;
+            '>Usuário não encontrado!</p>";
+            }
+        ?>
+    </div>
+</body>
+</html>
