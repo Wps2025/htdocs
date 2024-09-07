@@ -86,7 +86,7 @@ session_destroy();; ?>
             <br>
             <br>
             <br>
-            <a href="./form/formulario.html">Cadastre-se</a>
+            <a href="formulario.html">Cadastre-se</a>
             <?php
             if (isset($_GET['erro'])) {
                 echo "<p style='color:red;font:size20px;px;text-align:center;'

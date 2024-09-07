@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST['senha'];
 
     // Conexão com o banco de dados
-    include("./config.php");
+    include("config.php");
     //Verificar a conexão 
     if ($conn->connect_error) {
         die("Conexão falhou: " . $conn->connect_error);
@@ -20,17 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (password_verify($senha, $row['senha'])) {  
 
-           header('Location: Login/System/sistemaS.html');
+           header('Location: sistemaS.php');
            exit();
 
         } else {
 
-            header('ocation: /Loginn/login.html?erro=1');
+            header('ocation: login.php?erro=1');
             exit();
         }
     } else {
         echo "Usuário não encontrado!";
-        header('Location: /Home/home.html?erro=1');
+        header('Location: home.php?erro=1');
         exit();
 
     }
