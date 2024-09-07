@@ -1,6 +1,7 @@
 <?php
 session_start();
-session_destroy();; ?>
+session_destroy();
+ ?>
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -71,7 +72,7 @@ session_destroy();; ?>
 <body>
     <a href="home.php">HOME</a>
     <div class="box">
-        <form action="testLogin.php" method="POST">
+        <form action= "testLogin.php" method="POST">
             <h1>Login</h1>
             <input type="text" name="email" placeholder="E-mail">
             <br>
@@ -86,7 +87,7 @@ session_destroy();; ?>
             <br>
             <br>
             <br>
-            <a href="formulario.html">Cadastre-se</a>
+            <a href="formulario.php">Cadastre-se</a>
             <?php
             if (isset($_GET['erro'])) {
                 echo "<p style='color:red;font:size20px;px;text-align:center;'

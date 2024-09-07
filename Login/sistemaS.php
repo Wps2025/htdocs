@@ -1,5 +1,5 @@
 <?php
-include("protect.php");
+include("./Restricted%20Area/protect.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
