@@ -1,5 +1,5 @@
 <?php
-include("protect.php");
+include './restrictedArea/protect.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -63,7 +63,7 @@ include("protect.php");
     </fieldset>
 
     <div class="d-flex">
-        <a href="logout.php">Sair</a>
+        <a href="./restrictedArea/logout.php">Sair</a>
     </div>
 
 </body>
