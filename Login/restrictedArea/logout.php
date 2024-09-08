@@ -4,5 +4,6 @@ if (!isset($_SESSION)) {
 }
 session_destroy();
 
-header('Location: /projeto_Cadidatos/projeto_Cadidatos/Login/login.php');
+header('Location: /projeto_Cadidatos/projeto_Cadidatos/
+Login/structure/login.php');
 exit;
