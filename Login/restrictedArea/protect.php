@@ -5,6 +5,6 @@ if (!isset($_SESSION)) {
 
 if (!isset($_SESSION['user_id'])) {
     die("Não vai ser possivel acessa o sistema!
-        Cadastre-se no formulario / Acessa login novamente.
+        Cadastre-se o formulário / Acessa login novamente.
         <p><a href=\" ../structure/login.php\">Entra aqui</</p>");
 }

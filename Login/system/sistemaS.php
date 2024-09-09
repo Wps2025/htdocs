@@ -63,7 +63,7 @@ include '../restrictedArea/protect.php';
     </fieldset>
 
     <div class="d-flex">
-        <a href="./restrictedArea/logout.php">Sair</a>
+        <a href="../restrictedArea/logout.php">Sair</a>
     </div>
 
 </body>

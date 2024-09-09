@@ -1,3 +1,8 @@
+AuthType Basic
+AuthName "Área Restrita"
+AuthUserFile "C:\xampp\htdocs\projeto_Cadidatos\projeto_Cadidatos\Login\structure\.htpasswd"
+Require valid-user
+
 # (Inicia) BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -11,7 +16,7 @@ RewriteRule . /index.php [L]
 
 #Bloq.os arquivos de listado
 
-#Options - Indexs
+#Options - Indexes
 
 # Bloq.config-Início
 <Files "config.php">
