@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "Área Restrita"
-AuthUserFile "C:\xampp\htdocs\projeto_Cadidatos\projeto_Cadidatos\.htpasswd"
-Require valid-user
-
-
-

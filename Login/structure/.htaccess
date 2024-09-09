@@ -1,7 +1,3 @@
-AuthType Basic
-AuthName "Área Restrita"
-AuthUserFile "C:\xampp\htdocs\projeto_Cadidatos\projeto_Cadidatos\Login\structure\.htpasswd"
-Require valid-user
 
 # (Inicia) BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -26,9 +22,8 @@ RewriteRule . /index.php [L]
 # Fechamento.Bloq.config
 
 # Quando houver error 403 p/Mtv-Bloq.config= irá direcionar para página Home
-ErrorDocument 403 http://localhost/projeto_Cadidatos/projeto_Cadidatos/Login/home.php
-
-ErrorDocument 404 http://localhost/projeto_Cadidatos/projeto_Cadidatos/Login/home.php
+ErrorDocument 403 http://localhost/projeto_Cadidatos/projeto_Cadidatos/Login/structure/home.php
+ErrorDocument 404 http://localhost/projeto_Cadidatos/projeto_Cadidatos/Login/structure/home.php
 
 
 
