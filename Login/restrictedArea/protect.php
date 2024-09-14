@@ -8,3 +8,4 @@ if (!isset($_SESSION['user_id'])) {
         Cadastre-se o formulário / Acessa login novamente.
         <p><a href=\" ../structure/login.php\">Entra aqui</</p>");
 }
+?>
