@@ -1,4 +1,9 @@
 <?php
+///////////////////////////////////////////
+// Programador: Aluno William P. Santiago//
+//                                       //
+///////////////////////////////////////////
+
 // Conexão com o banco de dados
 $dbhost = 'localhost';
 $dbUsername = 'root';

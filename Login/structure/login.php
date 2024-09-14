@@ -1,4 +1,9 @@
 <?php
+///////////////////////////////////////////
+// Programador: Aluno William P. Santiago//
+//                                       //
+///////////////////////////////////////////
+
 session_start();
 session_destroy();
  ?>

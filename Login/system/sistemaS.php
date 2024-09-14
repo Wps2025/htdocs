@@ -1,4 +1,9 @@
 <?php
+///////////////////////////////////////////
+// Programador: Aluno William P. Santiago//
+//                                       //
+///////////////////////////////////////////
+
 include '../restrictedArea/protect.php';
 ?>
 <!DOCTYPE html>

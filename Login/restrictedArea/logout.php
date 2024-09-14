@@ -1,4 +1,8 @@
 <?php
+///////////////////////////////////////////
+// Programador: Aluno William P. Santiago//
+//                                       //
+///////////////////////////////////////////
 if (!isset($_SESSION)) {
     session_start();
 }
