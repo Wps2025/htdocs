@@ -24,7 +24,7 @@
 
             if (password_verify($senha, $row['senha'])) {
 
-                header('Location: /projeto_Cadidatos/projeto_Cadidatos/Login/system/sistemaS.php');
+                header('Location: /projeto_Cadidatos/Login/system/sistemaS.php');
                 exit();
             } else {
 
