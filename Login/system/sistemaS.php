@@ -5,6 +5,7 @@
 ///////////////////////////////////////////
 
 include '../restrictedArea/protect.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">

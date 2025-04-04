@@ -8,8 +8,8 @@ if (!isset($_SESSION)) {
 }
 
 if (!isset($_SESSION['user_id'])) {
-    die("Não vai ser possivel acessa o sistema!
-        Cadastre-se o formulário / Acessa login novamente.
-        <p><a href=\" ../structure/login.php\">Entra aqui</</p>");
+    exit("Não será possível acessar o sistema!
+            Cadastre-se no formulário ou acesse o login novamente.
+            <p><a href=\"../structure/login.php\">Entrar aqui</a></p>");
 }
 ?>
