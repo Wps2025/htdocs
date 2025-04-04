@@ -22,8 +22,8 @@ RewriteRule . /index.php [L]
 # Fechamento.Bloq.config
 
 # Quando houver error 403 p/Mtv-Bloq.config= irá direcionar para página Home
-ErrorDocument 403 http://localhost/projeto_Cadidatos/projeto_Cadidatos/Login/structure/home.php
-ErrorDocument 404 http://localhost/projeto_Cadidatos/projeto_Cadidatos/Login/structure/home.php
+ErrorDocument 403 http://localhost/projeto_Cadidatos/Login/structure/home.php
+ErrorDocument 404 http://localhost/projeto_Cadidatos/Login/structure/home.php
 
 
 
