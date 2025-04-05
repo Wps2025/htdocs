@@ -4,11 +4,15 @@
 //                                       //
 ///////////////////////////////////////////
 
+// Inicia a sessão se ainda não estiver iniciada
+session_start();
+// Verifica se a sessão já foi iniciada
 if (!isset($_SESSION)) {
     session_start();
 }
 if (session_status() === PHP_SESSION_NONE) {
     if (!session_start()) {
+        // Se a sessão não puder ser iniciada, exibe uma mensagem de erro e encerra o script
         exit("Erro ao iniciar a sessão. Por favor, tente novamente mais tarde.");
     }
 }

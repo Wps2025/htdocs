@@ -24,21 +24,21 @@
             $row = $result->fetch_assoc();
 
             if (password_verify($senha, $row['senha'])) {
-
+                // Se a senha estiver correta, armazena os dados do usuário na sessão
                 header('Location: /projeto_Cadidatos/Login/system/sistemaS.php');
                 exit();
             } else {
-
+                // Se a senha estiver incorreta, armazena a mensagem de erro na sessão
+                echo"Senha ou E-mail incorreta!";
                 header('Location: login.php?erro=1');
-                exit();
-            }
-        } else {
+                exit();}
+            } else {
             echo "Usuário não encontrado!";
             header('Location: home.php?erro=1');
             exit();
         }
-
+        // Fecha a conexão
         $stmt->close();
-
+        // Fecha a conexão com o banco de dados
         $conn->close();
     }
