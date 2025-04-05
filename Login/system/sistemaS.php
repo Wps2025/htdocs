@@ -4,7 +4,6 @@
 //                                       //
 ///////////////////////////////////////////
 
-include '../restrictedArea/protect.php';
 
 ?>
 <!DOCTYPE html>

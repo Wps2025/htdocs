@@ -16,14 +16,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Conexão falhou: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome','$email', '$senha')";
-    if ($conn->query($sql) === TRUE) {
+    $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $nome, $email, $senha);
 
+    if ($stmt->execute()) {
         header('Location: login.php');
         exit();
     } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+        echo "Erro: " . $stmt->error;
     }
+
+    $stmt->close();
 
     $conn->close();
 }

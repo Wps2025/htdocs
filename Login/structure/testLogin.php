@@ -15,9 +15,10 @@
             die("Conexão falhou: " . $conn->connect_error);
         }
 
-        $sql =  "SELECT * FROM usuarios WHERE email = '$email'";
-        $result = $conn->query($sql);
-
+        $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
@@ -36,6 +37,8 @@
             header('Location: home.php?erro=1');
             exit();
         }
+
+        $stmt->close();
 
         $conn->close();
     }

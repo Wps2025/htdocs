@@ -1,3 +1,19 @@
+<?php
+///////////////////////////////////////////
+// Programador: Aluno William P. Santiago//
+//                                       //
+///////////////////////////////////////////
+
+if (!isset($_SESSION)) {
+    session_start();
+}
+if (session_status() === PHP_SESSION_NONE) {
+    if (!session_start()) {
+        exit("Erro ao iniciar a sessão. Por favor, tente novamente mais tarde.");
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -38,9 +54,12 @@
     <div class="box">
         <a href="login.php">Login</a>
         <?php
+       
+
         if (isset($_GET['erro'])) {
             echo "<p style='color:black;font:size15px;px;text-align:center;
             '>Usuário não encontrado!</p>";
+            include '../restrictedArea/protect.php';
         }
         ?>
     </div>
