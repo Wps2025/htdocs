@@ -4,8 +4,8 @@
 //                                       //
 ///////////////////////////////////////////
 
-
 ?>
+
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -53,12 +53,10 @@
         }
     </style>
 </head>
-
 <body>
     <h1>Sejam bem-vindos!<br><br>
         <br><br>Login realizado com sucesso!
     </h1>
-
     <fieldset>
         <div>
             <a href="theory.php">Aulas Teóricas</a>
@@ -66,11 +64,9 @@
         </div>
         <br>
     </fieldset>
-
     <div class="d-flex">
         <a href="../restrictedArea/logout.php">Sair</a>
     </div>
-
 </body>
 
 </html>

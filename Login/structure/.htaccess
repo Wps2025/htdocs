@@ -1,13 +1,9 @@
 
 # (Inicia) BEGIN WordPress
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
+RewriteRule ^(.*)$ home.php?url=$1 [NC,L]
 # (Fim)END WordPress
 
 #Bloq.os arquivos de listado
@@ -15,15 +11,15 @@ RewriteRule . /index.php [L]
 #Options - Indexes
 
 # Bloq.config-Início
-<Files "config.php">
-    Order Allow,Deny
-    Deny from all
-</Files>
+#<Files "config.php">
+    #Order Allow,Deny
+    #Deny from all
+#</Files>
 # Fechamento.Bloq.config
 
 # Quando houver error 403 p/Mtv-Bloq.config= irá direcionar para página Home
-ErrorDocument 403 http://localhost/projeto_Cadidatos/Login/structure/home.php
-ErrorDocument 404 http://localhost/projeto_Cadidatos/Login/structure/home.php
+#ErrorDocument 403 http://localhost/projeto_Cadidatos/Login/structure/home.php
+#ErrorDocument 404 http://localhost/projeto_Cadidatos/Login/structure/home.php
 
 
 

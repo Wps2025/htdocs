@@ -4,20 +4,17 @@
 //                                       //
 ///////////////////////////////////////////
 
-// Inicia a sessão se ainda não estiver iniciada
-session_start();
 // Verifica se a sessão já foi iniciada
 if (!isset($_SESSION)) {
     session_start();
 }
-if (session_status() === PHP_SESSION_NONE) {
+if (session_status() === PHP_SESSION_NONE) {    
     if (!session_start()) {
-        // Se a sessão não puder ser iniciada, exibe uma mensagem de erro e encerra o script
+        // Se a sessão não puder ser     iniciada, exibe uma mensagem de erro e encerra o script
         exit("Erro ao iniciar a sessão. Por favor, tente novamente mais tarde.");
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -52,20 +49,25 @@ if (session_status() === PHP_SESSION_NONE) {
     </style>
 
 </head>
-
 <body>
     <h1>Sejam bem-vindos</h1>
     <div class="box">
         <a href="login.php">Login</a>
         <?php
-       
 
         if (isset($_GET['erro'])) {
             echo "<p style='color:black;font:size15px;px;text-align:center;
             '>Usuário não encontrado!</p>";
             include '../restrictedArea/protect.php';
         }
+        $rota = $_GET['url'] ?? '';
+
+        var_dump($rota);
+
+        include "Login/{$rota}.php";
+
         ?>
+        
     </div>
 </body>
 
