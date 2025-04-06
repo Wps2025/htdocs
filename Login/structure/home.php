@@ -3,7 +3,6 @@
 // Programador: Aluno William P. Santiago//
 //                                       //
 ///////////////////////////////////////////
-
 // Verifica se a sessão já foi iniciada
 if (!isset($_SESSION)) {
     session_start();
@@ -47,7 +46,6 @@ if (session_status() === PHP_SESSION_NONE) {
             font-size: 30px;
         }
     </style>
-
 </head>
 <body>
     <h1>Sejam bem-vindos</h1>
@@ -60,14 +58,7 @@ if (session_status() === PHP_SESSION_NONE) {
             '>Usuário não encontrado!</p>";
             include '../restrictedArea/protect.php';
         }
-        $rota = $_GET['url'] ?? '';
-
-        var_dump($rota);
-
-        include "Login/{$rota}.php";
-
         ?>
-        
     </div>
 </body>
 

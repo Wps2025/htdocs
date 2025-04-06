@@ -16,6 +16,6 @@ if (!isset($_SESSION['user_id'])) {
     session_destroy();
 echo htmlspecialchars("Não será possível acessar o sistema!
             Cadastre-se no formulário ou acesse o login novamente!");
-    header("Location: /projeto_Cadidatos/Login/structure/home.php");
+    header("Location: /projeto_Candidatos/Login/structure/home.php");
 exit();
 }

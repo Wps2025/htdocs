@@ -25,7 +25,7 @@
 
             if (password_verify($senha, $row['senha'])) {
                 // Se a senha estiver correta, armazena os dados do usuário na sessão
-                header('Location: /projeto_Cadidatos/Login/system/sistemaS.php');
+                header('Location: /projeto_Candidatos/Login/system/sistemaS.php');
                 exit();
             } else {
                 // Se a senha estiver incorreta, armazena a mensagem de erro na sessão
