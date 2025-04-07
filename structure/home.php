@@ -50,16 +50,14 @@ if (session_status() === PHP_SESSION_NONE) {
 <body>
     <h1>Sejam bem-vindos</h1>
     <div class="box">
-        <a href="">login</a>
+        <a href="login.php">login</a>
         <?php
+        // Verifica se a variável de sessão 'erro' está definida
         if (isset($_GET['erro'])) {
             echo "<p style='color:black;font:size15px;px;text-align:center;
             '>Usuário não encontrado!</p>";
             include '../restrictedArea/protect.php';
             exit;
-            $rota = $_GET['url'] ?? 'login';
-            
-            include "{$rota}.php";
         }
         ?>
         

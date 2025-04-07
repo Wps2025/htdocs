@@ -5,6 +5,7 @@
 ///////////////////////////////////////////
 session_start();
 session_destroy();
-header('Location: /projeto_Candidatos/Login/structure/home.php');
+header('Location: /projeto_Candidatos/structure/home.php');
+exit;
 
 ?>

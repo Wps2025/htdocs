@@ -161,7 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </fieldset>
     </form>
     </div>
-    <a href="login.php">Volta</a>
+    <a href="./login.php">Volta</a>
 
 </body>
 
