@@ -27,7 +27,7 @@ if (!isset($_SESSION['user_id'])) {
 
 // Exibir mensagem com o ID do usuário
 if (isset($_SESSION['user_id'])) {
-    echo "Sessão iniciada para o usuário: " . $_SESSION['user_id'];
+    //echo "Sessão iniciada para o usuário: " . $_SESSION['user_id'];
 } else {
     echo "Nenhuma sessão iniciada.";
 }

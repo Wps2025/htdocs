@@ -3,8 +3,6 @@
 // Programador: Aluno William P. Santiago//
 //                                       //
 ///////////////////////////////////////////
-
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -16,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->connect_error) {
         die("Conexão falhou: " . $conn->connect_error);
     }
-
     $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $nome, $email, $senha);
 
