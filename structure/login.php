@@ -4,6 +4,7 @@
 //                                       //
 ///////////////////////////////////////////
 -->
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -68,9 +69,8 @@
         }
     </style>
 </head>
-
 <body>
-    <a href="home.php">HOME</a>
+    <a href="home">HOME</a>
     <div class="box">
         <form action= "testLogin.php" method="POST">
             <h1>Login</h1>
@@ -80,23 +80,15 @@
             <input type="password" name="senha" placeholder="Senha">
             <br>
             <br>
-            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+            <input class="inputSubmit" type="submit" name="submit_button" value="Enviar">
             <br>
             <br>
-            <a1 href="">Esqueci minha senha</a1>
+            <a href="password">Esqueci minha senha</a>
             <br>
             <br>
             <br>
-            <a href="formulario.php">Cadastre-se</a>
-            <?php
-            
-            if (isset($_GET['erro'])) {
-                echo "<p style='color:red;font:size20px;px;text-align:center;'
-                    >Senha ou E-mail incorreta!</p>";
-            }
-            ?>
+            <a href="formulario">Cadastre-se</a>
         </form>
     </div>
 </body>
-
 </html>

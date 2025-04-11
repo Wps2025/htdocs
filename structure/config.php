@@ -1,9 +1,9 @@
 <?php
+
 ///////////////////////////////////////////
 // Programador: Aluno William P. Santiago//
 //                                       //
 ///////////////////////////////////////////
-
 // Conexão com o banco de dados
 $dbhost = 'localhost';
 $dbUsername = 'root';
@@ -32,4 +32,6 @@ if (isset($_SESSION['user_id'])) {
     echo "Nenhuma sessão iniciada.";
 }
 
+?>
+<?php
 ?>

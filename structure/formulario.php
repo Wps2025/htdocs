@@ -136,9 +136,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class="box">
-        <form method="POST" action="formulario.php">
+        <form method="POST" action="formulario">
             <fieldset>
-                <legend><b>Formulário do candidato</b></legend>
+                <legend><b>Cadastro do aluno </b></legend>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
@@ -161,7 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </fieldset>
     </form>
     </div>
-    <a href="./login.php">Volta</a>
+    <a href="login">Volta</a>
 
 </body>
 

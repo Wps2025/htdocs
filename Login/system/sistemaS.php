@@ -3,12 +3,10 @@
 // Programador: Aluno William P. Santiago//
 //                                       //
 ///////////////////////////////////////////
-
+include_once '../restrictedArea/protect.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,8 +63,7 @@
         <br>
     </fieldset>
     <div class="d-flex">
-        <a href="../restrictedArea/logout.php">Sair</a>
+        <a href="../restrictedArea/logout.php">sair</a>
     </div>
 </body>
-
 </html>

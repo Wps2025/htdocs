@@ -9,10 +9,11 @@ if (!isset($_SESSION)) {
 }
 if (session_status() === PHP_SESSION_NONE) {    
     if (!session_start()) {
-        // Se a sessão não puder ser     iniciada, exibe uma mensagem de erro e encerra o script
+        // Se a sessão não puder ser iniciada, exibe uma mensagem de erro e encerra o script
         exit("Erro ao iniciar a sessão. Por favor, tente novamente mais tarde.");
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -35,11 +36,9 @@ if (session_status() === PHP_SESSION_NONE) {
             transform: translate(-50%, -50%);
             padding: 60px;
         }
-
         h1 {
             text-align: center;
         }
-
         a {
             color: black;
             text-decoration: none;
@@ -48,20 +47,8 @@ if (session_status() === PHP_SESSION_NONE) {
     </style>
 </head>
 <body>
-    <h1>Sejam bem-vindos</h1>
     <div class="box">
-        <a href="login.php">login</a>
-        <?php
-        // Verifica se a variável de sessão 'erro' está definida
-        if (isset($_GET['erro'])) {
-            echo "<p style='color:black;font:size15px;px;text-align:center;
-            '>Usuário não encontrado!</p>";
-            include '../restrictedArea/protect.php';
-            exit;
-        }
-        ?>
-        
+        <a href="login">Sejam bem-vindos</a>
     </div>
 </body>
-
 </html>

@@ -1,0 +1,19 @@
+
+# (Inicia) BEGIN WordPress
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+# (Fim)END WordPress
+
+#Quando houver error 403 e 404 p/Mtv-Bloq.config= irá direcionar para página Home
+ErrorDocument 403 http://localhost/projeto_Candidatos/structure/home
+
+#Bloq.os arquivos de listado
+Options -Indexes
+
+<Files ".env">
+    Order Allow,Deny
+    Deny from Allow
+</Files>
