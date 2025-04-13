@@ -32,6 +32,7 @@
             }else{
             echo "<p> O e-mail '$email_verif' não foi encontrado no banco de dados.</p>";
         }
+
         $stmt->close();
         $conn->close();
     }
@@ -42,21 +43,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alteração de Cadastro</title>
+        <title>Alteração de Cadastro/Deleta</title>
         <link rel = "stylesheet" href="./css/password.css">
     </head>
     <body>
         <div class="form-container">
             <form method="POST">
                 <h1>Alteração de Cadastro</h1>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required>
-                    <label for="senha">Nova Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
-                    <a><button type="submit">Atualizar Senha</button></a>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="senha">Nova Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <button type="submit">Atualizar Senha</button>
+                <button onclick="window.location.href='/projeto_Candidatos/structure/delete';" 
+                type="button">Deleta</button>
             </form>
         </div>
-        <button onclick="window.location.href='/projeto_Candidatos/structure/login.php';" 
+        <button onclick="window.location.href='/projeto_Candidatos/structure/login';" 
         type="button">VOLTA</button>
     </body>
 </html>

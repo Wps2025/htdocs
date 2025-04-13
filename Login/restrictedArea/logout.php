@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 session_destroy();
-header('Location: /projeto_Candidatos/structure/login.php');
+header('Location: /projeto_Candidatos/structure/login');
 exit;
 
 ?>

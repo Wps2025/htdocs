@@ -29,13 +29,13 @@ background-image: linear-gradient(40deg, yellow, red);
 padding: 10px;
 border-radius: 15px;
 cursor: pointer;
-font-size: 30px;
+font-size: 20px;
 text-align: center;
 border-bottom: 5px solid black;
 font-weight: bold;
 }
 a:hover{
-background-image: linear-gradient(50deg, yellow, red);
+background-image: linear-gradient(50deg, red, yellow);
 }
 form button {
 padding: 5px;
@@ -44,11 +44,11 @@ text-decoration: none;
 background-image: linear-gradient(40deg, yellow, red);
 border-radius: 15px;
 cursor: pointer;
-font-size: 30px;
+font-size: 20px;
 border-bottom: 5px solid black;
 font-weight: bold;
 float: right;
 }
 form button:hover{
-background-image: linear-gradient(50deg, yellow, red);
+background-image: linear-gradient(50deg, red, yellow);
 }
