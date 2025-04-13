@@ -38,23 +38,25 @@
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<form method="POST">
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" required>
-    <br><br>
-    <label for="senha">Nova Senha:</label>
-    <input type="password" id="senha" name="senha" required>
-    <!--label for="senha">Confirmar Senha:</label>
-    <input type="password" id="senha" name="senha" required-->
-    <button type="update">Atualizar Senha</button>
-    </a><a href='/projeto_Candidatos/structure/login.php'><br><br>Login</a>
-</form>
-</body>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alteração de Cadastro</title>
+        <link rel = "stylesheet" href="./css/password.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <form method="POST">
+                <h1>Alteração de Cadastro</h1>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="senha">Nova Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <a><button type="submit">Atualizar Senha</button></a>
+            </form>
+        </div>
+        <button onclick="window.location.href='/projeto_Candidatos/structure/login.php';" 
+        type="button">VOLTA</button>
+    </body>
 </html>

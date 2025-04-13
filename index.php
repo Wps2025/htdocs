@@ -1,7 +1,16 @@
+<!--
+///////////////////////////////////////////
+// Programador: Aluno William P. Santiago//
+//                                       //
+///////////////////////////////////////////
+-->
 <?php
+///////////////////////////////////////////
+// Programador: Aluno William P. Santiago//
+//                                       //
+///////////////////////////////////////////
 
 include_once './config/configUrl.php';
-
 //Definir o fuso horário padrão
 date_default_timezone_set('America/Sao_Paulo');
 //----------------------------------------------------------------------------//
@@ -9,7 +18,7 @@ date_default_timezone_set('America/Sao_Paulo');
 //Se o parâmetro existir e tiver um valor, ele será atribuído à variável $url.
 //Caso contrário, $url receberá o valor padrão 'home'.
 $url = (!empty(filter_input(INPUT_GET, 'url', FILTER_DEFAULT)) ? filter_input
- (INPUT_GET, 'url', FILTER_DEFAULT) : 'home');
+ (INPUT_GET, 'url', FILTER_DEFAULT) : 'login');
 //Test
 //var_dump($url);
 //----------------------------------------------------------------------------//
@@ -22,7 +31,7 @@ $url = array_filter(explode('/', $url));
 //-----------------------------------------------------------------------------------//
 // Define o caminho do arquivo com base na URL. Se $url[1] existir e não estiver vazio, 
 //usa seu valor; caso contrário, usa 'home'.
-$arquivo = 'structure/' . (isset($url[1]) && !empty($url[0]) ? $url[1] : 'home') . '.php';
+$arquivo = 'structure/' . (isset($url[1]) && !empty($url[1]) ? $url[1] : 'login') . '.php';
 //-----------------------------------------------------------------------------------//
 //is_file($arquivo): Verifica se o arquivo especificado em $arquivo existe no sistema de arquivos.
 if(is_file($arquivo)){
@@ -39,7 +48,7 @@ if(is_file($arquivo)){
     //Essa página deve ser criada na pasta structure.
     include 'structure/404.php';
 }
-//--------------------------------------------------------------------------------------------//
-//Test
+exit;//--------------------------------------------------------------------------------------------//
+//Tes
 //var_dump($url);
 ?>

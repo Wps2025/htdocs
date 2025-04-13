@@ -3,7 +3,6 @@
 // Programador: Aluno William P. Santiago//
 //                                       //
 ///////////////////////////////////////////
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'];
         $senha = $_POST['senha'];
@@ -31,13 +30,13 @@
             }
         } else {
             // Se o cadastro não for encontrado, exibe a mensagem de erro
-            header('Location: home?erro.use.not.found');
+            header('Location: 404?erro.use.not.found');
         }
         //Fecha a conexão
         $stmt->close();
         //Fecha a conexão com o banco de dados
         $conn->close();
         }
-
 include_once '404.php';
+?>
 
