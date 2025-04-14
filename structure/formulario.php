@@ -44,17 +44,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <fieldset>
                 <legend><b>AINDA NÃO ME CADASTREI </b></legend>
                 <br><br>
-                <div class="inputBox">
+                <div class="inputBox"><br>
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome Completo</label>
                 </div>
                 <br>
-                <div class="inputBox">
+                <div class="inputBox"><br>
                     <input type="text" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Digite seu e-mail</label>
                 </div>
                 <br>
-                <div class="inputBox">
+                <div class="inputBox"><br>
                     <input type="password" name="senha" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Criar uma Senha</label>
                 </div>

@@ -21,46 +21,53 @@
         border-radius: 10px;
     }
 
-    a {
-        margin-bottom: 10px;
+    a.button{  
         text-decoration: none;
         background-image: linear-gradient(40deg, yellow, red);
         padding: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 10px;    
         border-radius: 15px;
         cursor: pointer;
         font-size: 14px;
         border-bottom: 5px solid black;
         display: inline-block;
     }
-
+    a.button:hover{
+        background-image: linear-gradient(45deg, red, yellow);
+    }
     input {
-        padding: 12px;
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
         outline: none;
-        font-size: 16px;
-        width: 90%;
+        font-size: 14px;
+        width: 100%;
         border-radius: 5px;
+        background-color: #ffffff; /* White background for a clean look */
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
     input:focus {
-        border-color: rgba(206, 81, 23, 0.952);
-        box-shadow: 0 0 5px rgba(206, 81, 23, 0.5);
+        border-color: rgba(255, 69, 0, 0.8); /* Orange border on focus */
+        box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
     }
 
     .inputBox {
         position: relative;
+        margin-bottom: 15px; /* Reduced spacing for compact layout */
     }
 
     .inputUser {
         background: none;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5); /* Subtle border for inputUser */
         outline: none;
-        color: black;
-        font-size: 10px;
+        color: #333; /* Darker text color for readability */
+        font-size: 14px;
+        background-color: transparent; /* Transparent background for minimal design */
+    }
+
+    .inputUser:focus {
+        border-bottom-color: rgba(255, 69, 0, 0.8); /* Match focus color with input */
     }
 
     .labelInput {
@@ -98,8 +105,7 @@
         border: none;
         padding: 15px;
         width: 100%;
-        font-size: 15px;
-        font-weight: bold;
+        font-size: 15px; 
         border-bottom: 5px solid black;
 
     }
@@ -116,7 +122,6 @@
         font-size: 12px;
         cursor: pointer;
         border-bottom: 5px solid black;
-        font-weight: bold;
         position: relative;
         margin: 10px;
     }
@@ -129,7 +134,6 @@
         font-size: 12px;
         cursor: pointer;
         border-bottom: 5px solid black;
-        font-weight: bold;
         position: relative;
         margin: 10px;
     }
