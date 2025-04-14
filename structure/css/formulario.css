@@ -21,11 +21,12 @@
         border-radius: 10px;
     }
 
-    a.button{  
+    a.button{ 
+        bottom: 15px; 
         text-decoration: none;
         background-image: linear-gradient(40deg, yellow, red);
         padding: 10px;
-        margin-left: 10px;    
+        margin-left: 10px;
         border-radius: 15px;
         cursor: pointer;
         font-size: 14px;
