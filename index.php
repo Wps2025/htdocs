@@ -40,7 +40,7 @@ if(is_file($arquivo)){
     //--------------------------------------------------------------------------------------//
     //Essa página é uma página de erro que informa que a página não foi encontrada.
     //Essa página deve ser criada na pasta structure.
-    include 'structure/404.php';
+    include 'structure/error.php';
 }
 exit;//--------------------------------------------------------------------------------------------//
 //Tes

@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verifica se a senha está correta
         if (password_verify($senha, $row['senha'])) {
         // Se a senha estiver correta, redireciona para o sistema
-        header('Location: /projeto_Candidatos/login/system/sistemaS.php');
+        header('Location: /projeto-candidatos/login/system/sistemaS.php');
         exit();
     } else {
         // Se a senha ou email estiver incorreta, exibe a mensagem de erro
@@ -30,13 +30,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
         // Se o cadastro não for encontrado, exibe a mensagem de erro
-        header('Location: 404?erro.use.not.found');
+        header('Location: error?use.not.found');
     }
         //Fecha a conexão
     $stmt->close();
     //Fecha a conexão com o banco de dados
     $conn->close();
 }
-include_once '404.php';
+include_once 'error.php';
 ?>
 

@@ -18,8 +18,8 @@ RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 
 
 #Quando houver error 403 e 404 p/Mtv-Bloq.config= irá direcionar para página Home
-ErrorDocument 403 http://localhost/projeto_Candidatos/structure/login
-ErrorDocument 404 http://localhost/projeto_Candidatos/structure/login
+ErrorDocument 403 http://localhost/projeto-candidatos/structure/login
+ErrorDocument 404 http://localhost/projeto-candidatos/structure/login
 
 #Bloq.os arquivos de listado
 Options -Indexes

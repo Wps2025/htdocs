@@ -15,8 +15,8 @@ if (session_status() === PHP_SESSION_NONE) {
 if (!isset($_SESSION['user_id'])) {
     session_destroy();
     echo nl2br(htmlspecialchars("Não será possível acessar o sistema! Cadastre-se no formulário ou acesse o login novamente!"));
-    echo "<br><a>Não tem uma conta? </a><a href='/projeto_Candidatos/structure/formulario'>Cadastre-se</a>";
-    echo "<a> ou </a><a href='/projeto_Candidatos/structure/login'>Login</a>";
+    echo "<br><a>Não tem uma conta? </a><a href='/projeto-candidatos/structure/formulario'>Cadastre-se</a>";
+    echo "<a> ou </a><a href='/projeto-candidatos/structure/login'>Login</a>";
     exit();
 
 }

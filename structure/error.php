@@ -10,8 +10,8 @@
         <div>
             <?php
                 echo "Não será possível acessar o sistema! <br>Cadastre-se no formulário ou acesse o login novamente!<br><br>Não tem uma conta?<br><br>";
-                echo "<a href='/projeto_Candidatos/structure/formulario'>Cadastre-se</a><br>";
-                echo "<br><a href='/projeto_Candidatos/structure/login'>Login</a>";
+                echo "<a href='/projeto-candidatos/structure/formulario'>Cadastre-se</a><br>";
+                echo "<br><a href='/projeto-candidatos/structure/login'>Login</a>";
                 exit();
             ?>
         </div>    
