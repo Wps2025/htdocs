@@ -14,7 +14,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 if (!isset($_SESSION['user_id'])) {
     session_destroy();
-    header('Location: /projeto-candidatos/structure/error?restricted');
+    header('Location: /htdocs/structure/error?restricted');
     exit;
 
 }

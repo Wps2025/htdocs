@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verifica se a senha está correta
         if (password_verify($senha, $row['senha'])) {
         // Se a senha estiver correta, redireciona para o sistema
-        header('Location: /projeto-candidatos/login/system/sistemaS.php');
+        header('Location: /htdocs/login/system/sistemaS.php');
         exit();
     } else {
         // Se a senha ou email estiver incorreta, exibe a mensagem de erro

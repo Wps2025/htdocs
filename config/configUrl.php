@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('URL')) {
-    define('URL', 'https://projeto-candidatos/structure/');
+    define('URL', 'https://htdocs/structure/');
 }
 
 ?>
