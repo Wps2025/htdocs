@@ -1,7 +1,6 @@
 <!--
 ///////////////////////////////////////////
 // Programador: Aluno William P. Santiago//
-//                                       //
 ///////////////////////////////////////////
 -->
 <!DOCTYPE html><!--"Ei navegador, isto é HTML na versão mais recente!".-->
