@@ -4,6 +4,11 @@
 //                                       //
 ///////////////////////////////////////////
 include_once '../restrictedArea/protect.php';
+//if (basename(__FILE__) == basename($_SERVER['SCRIPT_FILENAME'])) {
+    // Bloqueia o acesso direto
+    //http_response_code(403);
+    //header('Location: /htdocs/index.php');
+//}
 ?>
 <!DOCTYPE html>
 <html lang="pt">

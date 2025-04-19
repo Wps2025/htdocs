@@ -16,7 +16,6 @@ $conn = new mysqli($dbhost, $dbUsername, $dbPassword, $dbName);
 if ($conn->connect_error) {
     die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
-
 // Iniciar a sessão
 session_start();
 
@@ -31,7 +30,4 @@ if (isset($_SESSION['user_id'])) {
 } else {
     echo "Nenhuma sessão iniciada.";
 }
-
-?>
-<?php
 ?>

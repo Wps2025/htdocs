@@ -55,11 +55,11 @@
                 <label for="senha">Nova Senha:</label>
                 <input type="password" id="senha" name="senha" required>
                 <button type="submit">Atualizar Senha</button>
-                <button onclick="window.location.href='/htdocs/structure/delete';" 
+                <button onclick="window.location.href='/htdocs/structure/delete.php';" 
                 type="button">Deleta</button>
             </form>
         </div>
-        <button onclick="window.location.href='/htdocs/structure/login';" 
+        <button onclick="window.location.href='/htdocs/index.php';" 
         type="button">VOLTA</button>
     </body>
 </html>

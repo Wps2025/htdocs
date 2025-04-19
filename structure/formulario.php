@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sss", $nome, $email, $senha);
 
     if ($stmt->execute()) {
-        header('Location: login.php');
+        header('Location: /htdocs/index.php');
         exit();
     } else {
         echo "Erro: " . $stmt->error;
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </head>
         <body>
         <div class="box">
-            <form method="POST" action="formulario">
+            <form method="POST" action="/htdocs/structure/formulario.php">
             <fieldset>
                 <legend><b>AINDA NÃO ME CADASTREI </b></legend>
                 <br><br>
@@ -65,6 +65,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </fieldset>
         </form>
     </div>
-    <a href="login" class="button">VOLTA</a>
+    <a href="/htdocs/index.php" class="button">VOLTA</a>
     </body>
 </html>

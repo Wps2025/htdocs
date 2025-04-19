@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 session_destroy();
-header('Location: /htdocs/structure/login');
+header('Location: /htdocs/index.php');
 exit;
 
 ?>

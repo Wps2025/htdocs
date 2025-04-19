@@ -1,6 +1,5 @@
 <?php
 include_once 'config.php';
-
 $email_delete = $_POST['email'] ?? '';
         if (!empty($email_delete)) {
             $stmt = $conn->prepare("DELETE FROM usuarios WHERE email = ?");
@@ -16,7 +15,6 @@ $email_delete = $_POST['email'] ?? '';
             $stmt->close();
         }
         $conn->close();
-        
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -35,6 +33,6 @@ $email_delete = $_POST['email'] ?? '';
                     <button type="submit">Deletar Usuário</button>
                 </form>
             </div>
-            <a href="login" class="button">VOLTA</a>
+            <a href="/htdocs/index.php" class="button">VOLTA</a>
         </body>
 </html>
