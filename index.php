@@ -12,8 +12,8 @@
         <title>Login</title><!--Define o título que aparece na aba do navegador ou na barra de título da janela.-->
         <link rel = "stylesheet" href="./structure/css/index.css"><!--Este código conecta a página web ao arquivo de estilos index.css para definir a aparência visual do site.-->
     </head><!--Esta seção é fim contém informações sobre o documento HTML que não são exibidas diretamente na página.-->
-    <body>
-        <div class="box">
+    <body><!--Aqui começa o que você realmente vê na tela.-->
+        <div class="box"><!--Criei uma caixa para organizar os elementos de login.-->
             <form action= "/htdocs/structure/testLogin.php" method="POST">
                 <h3>JÁ SOU CADASTRADO!</h3>
                     <br>
@@ -26,7 +26,7 @@
                     <a href="/htdocs/structure/password.php">Não lembro minha senha</a>
                     <br><br><br><br>
                     <a href="/htdocs/structure/formulario.php">Cadastre-se</a>
-            </form>
-        </div>
-    </body>
+            </form><!--Fim do formulário de login.-->
+        </div><!--Fim da caixa de login.-->
+    </body><!--Fim do que você vê na tela.-->
 </html><!--Esta é a tag raiz que envolve todo o conteúdo este é fim do meu código.-->
