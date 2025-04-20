@@ -1,6 +1,6 @@
 <?php
+// Abertura do bloco de código <?PHP que deve ser interpretado e exeutado pelo servidor.    
     include_once 'config.php';
-    // Ensure $conn is initialized as a valid database connection
     if (!isset($conn) || !$conn) {
         die("Erro: Conexão com o banco de dados não foi estabelecida.");
     }
@@ -32,17 +32,20 @@
             }else{
             echo "<p> O e-mail '$email_verif' não foi encontrado no banco de dados.</p>";
         }
-
         $stmt->close();
         $conn->close();
     }
 }
+// É a tag de fechamento para um bloco de código ? >.   
 ?>
-<!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><!--"Eai navegador, isto é HTML na versão mais recente!".-->
+<html lang="pt-BR"><!--Esta é a tag raiz que envolve todo o conteúdo deste o início do meu  código e "lang" especifica o 
+    idioma principal do conteúdo da página.-->
+    <head><!--Esta seção é início contém informações sobre o documento HTML que não são exibidas diretamente na página.-->
+        <meta charset="UTF-8"><!--Defina a codificação de caracteres do documento.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Eai navegador, ajuste a largura da 
+        página para a largura do dispositivo (desktop, tablet, celular) em que ela está sendo visualizada e não aplique 
+        nenhum zoom inicial.-->
         <title>Alteração de Cadastro/Deleta</title>
         <link rel = "stylesheet" href="./css/password.css">
     </head>

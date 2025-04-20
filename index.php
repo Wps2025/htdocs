@@ -3,12 +3,12 @@
 // Programador: Aluno William P. Santiago//
 ///////////////////////////////////////////
 -->
-<!DOCTYPE html><!--"Ei navegador, isto é HTML na versão mais recente!".-->
+<!DOCTYPE html><!--"Eai navegador, isto é HTML na versão mais recente!".-->
 <html lang="pt-BR"><!--Esta é a tag raiz que envolve todo o conteúdo deste o início do meu  código e "lang" especifica o 
     idioma principal do conteúdo da página.-->
     <head><!--Esta seção é início contém informações sobre o documento HTML que não são exibidas diretamente na página.-->
         <meta charset="UTF-8"><!--Defina a codificação de caracteres do documento.-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Ei navegador, ajuste a largura da página
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Eai navegador, ajuste a largura da página
         para a largura do dispositivo (desktop, tablet, celular) em que ela está sendo visualizada e não aplique nenhum zoom inicial.-->
         <title>Login</title><!--Define o título que aparece na aba do navegador ou na barra de título da janela.-->
         <link rel = "stylesheet" href="./structure/css/index.css"><!--Este código conecta a página web ao arquivo de 
@@ -21,8 +21,8 @@
                 para o enderenço das pastas até o arquivo->/htdocs/structure/testLogin.php de uma forma especifica.-->
                 <h3>JÁ SOU CADASTRADO!</h3><!--Está é uma terceiro título-->
                     <br><!--Pule uma linha-->
-                    <input type="text" name="email" placeholder="E-mail"><!--Este é um campo onde você pode digitar e-mail
-                     do usuário-->
+                    <input type="text" name="email" placeholder="E-mail"><!--Este é um campo onde usuário pode digitar e-mail
+                    -->
                     <br><br><!--Pule duas linhas-->
                     <input type="password" name="senha" placeholder="Senha"><!--Este é um campo onde você pode digitar 
                     senha do usuário (os caracteres geralmente aparecem escondidos).-->
