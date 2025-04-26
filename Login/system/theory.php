@@ -1,13 +1,11 @@
 <?php
 ///////////////////////////////////////////
 // Programador: Aluno William P. Santiago//
-//                                       //
 ///////////////////////////////////////////
-
-include '../restrictedArea/protect.php';
+//include '../restrictedArea/protect.php';
 ?>
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +16,11 @@ include '../restrictedArea/protect.php';
 </head>
 
 <body>
-    <h1>Olá mundo!</h1>
+    <header>Cabeçalho</header>
+    <nav>Menu</nav>
+    <main>Conteúdo</main>
+    <aside>Relacionado</aside>
+    <footer>Rodapé</footer>
 </body>
 
 </html>
