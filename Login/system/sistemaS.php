@@ -11,7 +11,7 @@ include_once '../restrictedArea/protect.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema | logado </title>
-    <link rel = "stylesheet" type="text/css" href="../system/css/sistemaS.css">
+    <link rel = "stylesheet" type="text/css" href="/htdocs/login/system/css/sistemaS.css">
 </head>
 <body>
     <header>
