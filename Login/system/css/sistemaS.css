@@ -1,54 +1,185 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(80deg, red, yellow);
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Modificar scroll
+Firefox-Todos as barras*/
+*{
+    scrollbar-width: 12px;/*largura da barra*/
+    scrollbar-color: #5a5a5a #9a9a9a;/*D.botão deslizante*/
+}
+/*Chorme, Edge e safari*/
+::-webkit-scrollbar{
+    width: 12px;/*D.mais formatação-largura da barra*/
+}
+*::-webkit-scrollbar-track{
+    background: #9a9a9a;/*A cor de fundo*/
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #5a5a5a;/*D.botão deslizante*/
+    border-radius: 20px;/*redondamento*/
+    border: 1px solid #9a9a9a;/*E bordo*/
+}
+/*Corpo*/
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.40px;
+    flex: 10 1 100vw;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right,rgb(252, 60, 60),red,yellow, red);
+}
+/*Cor de fundo-Menu e Rodapé */
+nav, footer{
+    background-repeat: no-repeat;
+    background: linear-gradient(45deg, yellow, red);
+}
+/*Cor de fundo-Relacionado */
+aside{
+    background-repeat: no-repeat;
+    background: yellow;   
+}
+header,nav,main,aside,footer{
+    display: flex;
+    margin: 0.50px;
+}
+/*Cabeçalho*/
+header{
+    flex: 1 1 100vw;
+}
+/*Cor do fundo do LOGO Cabeçlho*/
+header #logo{
+    flex: 0 1 32vw;
+    background: #dfdcdc;
+    border-radius: 5px;
+    border: 1px solid black/*E bordo*/
+}
+/*Remove as decoração padrões do botão Menu*/
+#openMenu, #closeMenu{
+    border: none;/*R.borda*/
+    background: none;/*R.cor*/
+    font-size: 30px;/*Aumenta a fonte da letras*/
+    font-weight: bold;/*Aumenta a espesura*/
+    padding: 0px 5px 0px 5px;/*Criar imagem D.E*/
+    cursor: pointer;/*Alterar mouse para ponteiro*/
+    display: none;/*ocultar a exibição */
+    color: black;/*Cor ícone do Menu*/
+}
+/*Menu*/
+nav{
+    flex: 1 1 150vw;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 5px;
+    border: 1px solid black/*E bordo*/
+}
+/*Texto do menu*/
+nav a{
+    margin: 3%;
+    font-size: 20pt;
+}
+/*conteúdo*/
+main{
+    flex: 20 1 500px;
+    flex-wrap: wrap;
+    overflow: auto;
+    border-radius: 5px;
+    border: 1px solid black/*E bordo*/
+}
+main section{
+    width: 100%;
+    height: 75vh;
+    margin: 0.01px;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, transparent, yellow, red);
+}
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+fieldset{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black/*E bordo*/
+}
+
+/*Relacionado*/
+aside{
+    flex: 1 1 210px;
+    padding: 1.5vh;
+    border-radius: 5px;
+    border: 1px solid black/*E bordo*/
+}
+/*Rodapé*/
+footer{
+    flex: 1 1 500vw;
+    position: fixed;
+    bottom: 0;
+    padding: 1.5vh;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black/*E bordo*/
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*Cor da font Conteúdo*/
+fieldset a{
+    font-size: 25px;
     color: black;
 }
-
-h1 {
-    position: absolute;
-    padding: 10px;
-    left: 20px;
-
+/*Cor da font Menu*/
+nav a{
+    color: black;
 }
-
-fieldset {
-    border: 2px solid rgba(206, 81, 23, 0.952);
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    border-radius: 15px;
-}
-
-a{
-color: black;
-text-decoration: none;
-background-image: linear-gradient(40deg, yellow, red);
-padding: 10px;
-border-radius: 15px;
-cursor: pointer;
-font-size: 20px;
-text-align: center;
-border-bottom: 5px solid black;
-font-weight: bold;
-}
-a:hover{
-background-image: linear-gradient(50deg, red, yellow);
-}
-form button {
-padding: 5px;
-color: black;
-text-decoration: none;
-background-image: linear-gradient(40deg, yellow, red);
-border-radius: 15px;
-cursor: pointer;
-font-size: 20px;
-border-bottom: 5px solid black;
-font-weight: bold;
-float: right;
-}
-form button:hover{
-background-image: linear-gradient(50deg, red, yellow);
+@media only screen and (max-width: 907px){
+    header{
+        order: 0;/*Ordem de exibição 0*/
+    }
+/*Conteúdo*/
+    main{
+        order: 1;/*Ordem de exibição 1*/
+    }
+/*Relacionado*/
+    aside{
+        flex: 1 1 100vw;
+        order: 2;/*Ordem de exibição 2*/
+    }
+    footer{
+        order: 3;/*Ordem de exibição 3*/
+    }
+}    
+@media only screen and (max-width: 705px){
+    #openMenu, #closeMenu {
+        display: block;
+    }
+    #openMenu{
+        margin-left: auto;
+    }
+    #closeMenu{
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+    nav{
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
 }
