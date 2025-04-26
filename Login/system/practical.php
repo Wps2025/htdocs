@@ -3,7 +3,7 @@
 // Programador: Aluno William P. Santiago//
 //                                       //
 ///////////////////////////////////////////
-//include_once '../restrictedArea/protect.php';
+include_once '../restrictedArea/protect.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
