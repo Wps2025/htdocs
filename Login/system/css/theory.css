@@ -28,10 +28,13 @@ body{
     flex-wrap: wrap;
     margin: 0.40px;
     flex: 10 1 100vw;
+    background-position: center;
+    background-image: url("/login/system/imag/capturaA.png");
 }
 /*Cor de fundo-Menu e Rodapé */
 nav, footer{
-    background: linear-gradient(45deg, yellow, red);
+    background: linear-gradient(green, blue);
+    background-repeat: no-repeat;
 }
 header,nav,main,aside,footer{
     display: flex;
@@ -44,7 +47,7 @@ header{
 /*Cor do fundo do LOGO Cabeçlho*/
 header #logo{
     flex: 0 1 32vw;
-    background: #dfdcdc;
+    background-color: #9a9a9a;
     border-radius: 5px;
     border: 1px solid black/*E bordo*/
 }

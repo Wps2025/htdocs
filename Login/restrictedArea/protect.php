@@ -13,8 +13,11 @@ if (session_status() === PHP_SESSION_NONE) {
     }
 }
 if (!isset($_SESSION['user_id'])) {
-    session_destroy();
-    header('Location: /htdocs/structure/error.php?restricted');
-    exit;
 
+    // 1. Remover todas as variáveis de sessão
+    session_unset();
+
+    session_destroy();
+    header('Location: /structure/error.php?restricted');
+    exit;
 }

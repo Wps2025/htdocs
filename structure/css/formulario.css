@@ -1,140 +1,159 @@
+    @charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*Corpo*/
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+    flex: 10 1 100vw;
+}
+/*Cor de fundo-Menu e Rodapé */
+footer{
+    background: linear-gradient(white, gray);
+    background-repeat: no-repeat;
+}
+nav{
+    background: linear-gradient(white, gray);
+    background-repeat: no-repeat;
+}
+nav,main,footer{
+    display: flex;
+    margin: 10px;
+}
+/*Cabeçalho*/
+header{
+    flex: 1 1 100vw;
+}
+/*Menu*/
+nav{
+    flex: 1 1 150vw;
+    align-items: flex-start; /* Align menu items to the left */
+    justify-content: flex-start; /* Position menu to the left */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Texto do menu*/
+a.button{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 1%;
+}
+/*conteúdo*/
+main{
+    flex: 20 1 500px;
+    flex-wrap: wrap;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+main section{
+    width: 100%;
+    height: 65vh;
+    margin: 0;
+}
+form{
+    max-width: 245px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+section form {
+    margin-top: 5vh;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+input {
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+/*E bordo*/
+input:hover{
+    background: rgb(201, 201, 201);
+}
+.inputBox {
+    position: relative;
+    margin-bottom: 0; /* Reduced spacing for compact layout */
+}
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 5px;
+}
+fieldset {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+legend {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+}
+/*Rodapé*/
+footer{
+    bottom: 0;
+    width: 100;
+    right: 0;
+    left: 0;
+    position: fixed;
+    flex: 1 1 150vw;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 907px){
+    header {
+        order: 0;/*Ordem de exibição 0*/
     }
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: linear-gradient(45deg, red, yellow);
-        background-repeat: no-repeat;
+    main{
+        order: 1;/*Ordem de exibição 1*/
+        
+    }
+    footer{
+        order: 2;/*Ordem de exibição 3*/
+    }
+
+}
+/*@media only screen and (max-width: 600px){
+    nav{
+        position: fixed;
+        flex-direction: column;
         width: 100vw;
         height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
     }
-
-    .box {
-        background-image: linear-gradient(45deg, yellow, red);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px;
-        border-radius: 10px;
+    footer{
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
     }
-
-    a.button{ 
-        bottom: 15px; 
-        text-decoration: none;
-        background-image: linear-gradient(40deg, yellow, red);
-        padding: 10px;
-        margin-left: 10px;
-        border-radius: 15px;
-        cursor: pointer;
-        font-size: 14px;
-        border-bottom: 5px solid black;
-        display: inline-block;
-    }
-    a.button:hover{
-        background-image: linear-gradient(45deg, red, yellow);
-    }
-    input {
-        padding: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        outline: none;
-        font-size: 14px;
-        width: 100%;
-        border-radius: 5px;
-        background-color: #ffffff; /* White background for a clean look */
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    input:focus {
-        border-color: rgba(255, 69, 0, 0.8); /* Orange border on focus */
-        box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
-    }
-
-    .inputBox {
-        position: relative;
-        margin-bottom: 15px; /* Reduced spacing for compact layout */
-    }
-
-    .inputUser {
-        background: none;
-        border: none;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.5); /* Subtle border for inputUser */
-        outline: none;
-        color: #333; /* Darker text color for readability */
-        font-size: 14px;
-        background-color: transparent; /* Transparent background for minimal design */
-    }
-
-    .inputUser:focus {
-        border-bottom-color: rgba(255, 69, 0, 0.8); /* Match focus color with input */
-    }
-
-    .labelInput {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        pointer-events: none;
-        transition: 5px;
-    }
-    .inputUser:valid~.labelInput {
-        top: -20px;
-        font-size: 15px;
-        padding: 5px;
-
-    }
-
-    fieldset {
-        border: 1px solid rgba(206, 81, 23, 0.952);
-        border-radius: 5px;
-        padding: 15px;
-    }
-
-    legend {
-        border: 2px solid rgba(206, 81, 23, 0.952);
-        padding: 10px;
-        text-align: center;
-        border-radius: 5px;
-        color: black;
-    }
-
-    #submit {
-        background-image: linear-gradient(50deg, red, yellow);
-        border-radius: 15px;
-        cursor: pointer;
-        border: none;
-        padding: 15px;
-        width: 100%;
-        font-size: 15px; 
-        border-bottom: 5px solid black;
-
-    }
-
-    #submit:hover {
-        background-image: linear-gradient(50deg, yellow, red);
-    }
-    .button {
-        background: linear-gradient(45deg, yellow, red);
-        border: none;
-        padding: 10px;
-        border-radius: 15px;
-        color: black;
-        font-size: 12px;
-        cursor: pointer;
-        border-bottom: 5px solid black;
-        position: relative;
-        margin: 10px;
-    }
-    div.button {
-        background: linear-gradient(45deg, yellow, red);
-        border: none;
-        padding: 10px;
-        border-radius: 15px;
-        color: black;
-        font-size: 12px;
-        cursor: pointer;
-        border-bottom: 5px solid black;
-        position: relative;
-        margin: 10px;
-    }
+}*/

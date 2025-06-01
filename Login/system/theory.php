@@ -10,8 +10,8 @@ include_once '../restrictedArea/protect.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema | logado </title>
-    <link rel = "stylesheet" type="text/css" href="/htdocs/login/system/css/sistemaS.css">
+    <title>Conteúdo | Teórico </title>
+    <link rel = "stylesheet" type="text/css" href="/login/system/css/theory.css">
 </head>
 <body>
     <header>
@@ -19,10 +19,10 @@ include_once '../restrictedArea/protect.php';
         <button id="openMenu">&#9776;</button>
             <nav id="menu">
                 <button id="closeMenu">X</button>
-                <a href="/htdocs/login/system/sistemaS.php">Ínicio</a>
+                <a href="/login/system/sistemaS.php">ínicio</a>
                 <a href="#">Texto</a>
                 <a href="#">Texto</a>
-                <a href="/htdocs/login/restrictedArea/logout.php">Sair</a>
+                <a href="/login/restrictedArea/logout.php">sair</a>
             </nav>
     </header>
             <main>
@@ -30,14 +30,13 @@ include_once '../restrictedArea/protect.php';
                     <form>
                     <fieldset>
             <legend><h2>Apresentação</h2></legend>
-            <p>Sou William, instrutor de trânsito com dois anos de experiência e mais de dez anos de habilitação. Minha
-            especialidade é formar futuros condutores que dirijam com segurança e responsabilidade. O aprendizado se 
-            desenvolve com o tempo e existem diversos métodos para isso. Um conceito que destaco é a Pirâmide de Aprendizagem 
-            de William Glasser, esses métodos promovem uma retenção muito maior (70% a 95%) em comparação com os passivos 
-            (ler, ouvir - 10% a 20%). Portanto, para formar condutores seguros e responsáveis, é crucial ir além da teoria 
-            tradicional e envolver os alunos ativamente, variando as abordagens de ensino para um aprendizado profundo e duradouro.
-            <br><br><p> E vocês devem estar se perguntando: como assim aula prática? Sim, aluno, vamos praticar através de 
-            sequências de repetições nas leituras.</p>
+            <p>Olá, eu sou William, instrutor de trânsito, é um prazer estar com vocês fazendo parte do processo de aprendizagem de direção veicular. Especializado por formar futuros condutores, por um trânsito mais seguro e harmonioso, tenho há mais de dez anos de habilitação, com dois anos de profissão dedicados a guiar novos condutores nessa jornada transformadora.
+            <br><br>
+            Este conteúdo visa estimular a reflexão teórica sobre os assuntos.
+            <br><br>
+            Vamos juntos nessa?<br><br>
+
+            Em breve colocaremos conteúdo! Obrigado pela compreensão. 
             </fieldset><br>
                 </section>        
             </main>

@@ -1,10 +1,16 @@
+php_value display_errors On
+php_value mbstring.http_input auto
+php_value date.timezone America/Sao_Paulo
+RewriteEngine On
+RewriteCond %{HTTPS} On
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # (Fim)END WordPress
 <Files "config.php">
     Order Allow,Deny
     Deny from Allow
 </Files>
 #Quando houver error 403 e 404 p/Mtv-Bloq.config= irá direcionar para página Home
-ErrorDocument 403 http://instrutor-trs.byethost24.com/htdocs/index.php
-ErrorDocument 404 http://instrutor-trs.byethost24.com/htdocs/index.php
+ErrorDocument 403 https://instrutor-trs.byethost24.com/index.php?403
+ErrorDocument 404 https://instrutor-trs.byethost24.com/index.php?404
 #Bloq.os arquivos de listado
 Options -Indexes

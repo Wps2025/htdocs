@@ -10,8 +10,9 @@ include_once '../restrictedArea/protect.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema | logado </title>
-    <link rel = "stylesheet" type="text/css" href="/htdocs/login/system/css/sistemaS.css">
+    <title>Painel  | Usuário logado </title>
+    <link rel="icon" href="https://instrutor-trs.byethost24.com/index.php"/>
+    <link rel = "stylesheet" type="text/css" href="/login/system/css/sistemaS.css">
 </head>
 <body>
     <header>
@@ -22,15 +23,15 @@ include_once '../restrictedArea/protect.php';
                 <a href="#">Texto</a>
                 <a href="#">Texto</a>
                 <a href="#">Texto</a>     
-                <a href="/htdocs/login/restrictedArea/logout.php">Sair</a>
+                <a href="/login/restrictedArea/logout.php">sair</a>
             </nav>
     </header>
     <aside>Relacionado</aside>
             <main>
                 <section>
                     <form>
-                <fieldset><a href="/htdocs/login/system/practical.php">Prática</a></fieldset>
-                <fieldset><a href="/htdocs/login/system/theory.php">Teórica</a></fieldset>
+                <fieldset><a href="/login/system/practical.php">Prática</a></fieldset>
+                <fieldset><a href="/login/system/theory.php">Teórica</a></fieldset>
                     </form>
                 </section>
             </main>

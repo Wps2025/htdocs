@@ -1,89 +1,142 @@
-/* Reset básico */
-* {
+@charset "UTF-8";
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Estilo do corpo */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(45deg, red, yellow);
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+/*Corpo*/
+body{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.40px;
+    flex: 10 1 100vw;
+}
+/*Cor de fundo-Menu e Rodapé */
+footer{
+    background: linear-gradient(white, gray);
+    background-repeat: no-repeat;
+}
+nav{
+    background: linear-gradient(white, gray);
+    background-repeat: no-repeat;
+}
+nav,main,footer{
+    display: flex;
+    margin: 10px;
+}
+/*Cabeçalho*/
+header{
+    flex: 1 1 100vw;
+}
+/*Menu*/
+nav{
+    flex: 1 1 150vw;
     align-items: center;
+    justify-content: flex-end;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Estilo de links */
-a {
-    color: black;
-    text-decoration: none;
-    background: linear-gradient(40deg, yellow, red);
-    padding: 15px;
+/*Texto do menu*/
+nav a{
+    margin: 2%;
+}
+/*conteúdo*/
+main{
+    margin-top: 40px;
+    flex: 20 1 500px;
+    flex-wrap: wrap;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+main section{
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+}
+form{
+    max-width: 245px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+section form{
+    margin-top: 5vh;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
     border-radius: 15px;
-    cursor: pointer;
-    font-size: 14px;
-    text-align: center;
-    border-bottom: 5px solid black;
-    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-a:hover, a:focus {
-    background: linear-gradient(45deg, red, yellow);
-}
-
-/* Estilo do container */
-div {
-    background: linear-gradient(45deg, yellow, red);
-    padding: 60px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 /* Estilo dos inputs */
 input {
-    padding: 10px;
-    border: none;
+    padding: 5px;
     outline: none;
-    font-size: 15px;
     width: 100%;
     margin-bottom: 15px;
     border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;/*E bordo*/
 }
-
-/* Botão de envio */
-.inputSubmit {
-    background: linear-gradient(45deg, yellow, red);
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 15px;
+.inputSubmit:hover {
+    background: rgb(201, 201, 201);
+}
+a{
     color: black;
-    font-size: 15px;
-    cursor: pointer;
-    border-bottom: 5px solid black;
-    font-weight: bold;
+    text-decoration: none;
 }
-
-.inputSubmit:hover, .inputSubmit:focus {
-    background: linear-gradient(45deg, red, yellow);
-    transform: translateY(-2px);
-}
-button {
-    background: linear-gradient(45deg, yellow, red);
-    border: none;
-    padding: 10px;
-    border-radius: 15px;
+a:hover{
     color: black;
-    font-size: 15px;
-    cursor: pointer;
-    border-bottom: 5px solid black;
-    font-weight: bold;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    text-decoration: underline;
 }
+/*Rodapé*/
+footer{
+    bottom: 0;
+    width: 100;
+    right: 0;
+    left: 0;
+    position: fixed;
+    flex: 1 1 150vw;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 907px){
+    header {
+        order: 0;/*Ordem de exibição 0*/
+    }
+    main{
+        order: 1;/*Ordem de exibição 1*/
+        
+    }
+    footer{
+        order: 2;/*Ordem de exibição 3*/
+    }
+
+}
+/*@media only screen and (max-width: 600px){
+    nav{
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    footer{
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+}*/

@@ -28,18 +28,18 @@ body{
     flex-wrap: wrap;
     margin: 0.40px;
     flex: 10 1 100vw;
-    background-repeat: no-repeat;
-    background: linear-gradient(to right,rgb(252, 60, 60),red,yellow, red);
+    background-position: center;
+    background-image: url("/login/system/imag/capturaA.png");
 }
 /*Cor de fundo-Menu e Rodapé */
 nav, footer{
+    background: linear-gradient(green, blue);
     background-repeat: no-repeat;
-    background: linear-gradient(45deg, yellow, red);
-}
+    }
 /*Cor de fundo-Relacionado */
 aside{
     background-repeat: no-repeat;
-    background: yellow;   
+    background: rgba(255, 255, 255, 0.637);  
 }
 header,nav,main,aside,footer{
     display: flex;
@@ -92,8 +92,6 @@ main section{
     width: 100%;
     height: 75vh;
     margin: 0.01px;
-    background-repeat: no-repeat;
-    background: linear-gradient(to right, transparent, yellow, red);
 }
 form{
     max-width: 600px;

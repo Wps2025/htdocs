@@ -10,8 +10,8 @@ include_once '../restrictedArea/protect.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema | logado </title>
-    <link rel = "stylesheet" type="text/css" href="/htdocs/login/system/css/sistemaS.css">
+    <title>Conteúdo | Prático </title>
+    <link rel = "stylesheet" type="text/css" href="/login/system/css/practical.css">
 </head>
 <body>
     <header>
@@ -19,69 +19,106 @@ include_once '../restrictedArea/protect.php';
         <button id="openMenu">&#9776;</button>
             <nav id="menu">
                 <button id="closeMenu">X</button>
-                <a href="/htdocs/login/system/sistemaS.php">Ínicio</a>
+                <a href="/login/system/sistemaS.php">ínicio</a>
                 <a href="#">Texto</a>
                 <a href="#">Texto</a>
-                <a href="/htdocs/login/restrictedArea/logout.php">Sair</a>
+                <a href="/login/restrictedArea/logout.php">sair</a>
             </nav>
     </header>
             <main>
                 <section>
-                    <form>
+                    <form><div>
                     <fieldset>
-            <legend><h2>Apresentação</h2></legend>
-            <p>Sou William, instrutor de trânsito com dois anos de experiência e mais de dez anos de habilitação. Minha
-            especialidade é formar futuros condutores que dirijam com segurança e responsabilidade. O aprendizado se 
-            desenvolve com o tempo e existem diversos métodos para isso. Um conceito que destaco é a Pirâmide de Aprendizagem 
-            de William Glasser, esses métodos promovem uma retenção muito maior (70% a 95%) em comparação com os passivos 
-            (ler, ouvir - 10% a 20%). Portanto, para formar condutores seguros e responsáveis, é crucial ir além da teoria 
-            tradicional e envolver os alunos ativamente, variando as abordagens de ensino para um aprendizado profundo e duradouro.
-            <br><br><p> E vocês devem estar se perguntando: como assim aula prática? Sim, aluno, vamos praticar através de 
-            sequências de repetições nas leituras.</p>
+<legend><h2>Apresentação</h2></legend>
+            <p>Olá, eu sou William, instrutor de trânsito, é um prazer estar com vocês fazendo parte do processo de aprendizagem de direção veicular. Especializado para formar futuros condutores, por um trânsito mais seguro, tenho há mais de dez anos de habilitação, com dois anos de profissão dedicados a guiar novos condutores nessa jornada transformadora.
+            <br><br>
+            Daí vocês estão se perguntando, prática? Sim, iremos seguir um procedimento com método de repetições de leituras em ordem. Como se diz o ditado, "A repetição leva à perfeição".
+            <br><br>
+            Vamos juntos nessa? 
             </fieldset><br>
-                    </form>
-        <h2>Procedimento iniciais para condução do veículo</h2>
-    <br>
-    <p>Futuros condutores vocês deveram encontrar sua zona de conforto!
-        <br><br>
-        <p>Primeiro Passo:</p>
-        <br>
-        Repetição 2x
-        <br><br>
-        1°- Ao entrar no veículo, feche a porta completamente.
-        <br>
-        2°- Ajuste o banco de forma que seus pés alcancem nos pedais.
-        <br>
-        3°- As mãos ao volante (9:15 ou 10:10) com uma leve flexão nos braços.
-        <br>
-        4°- Regule retrovisores (interno e externos) para ter uma visão clara nas partes de trás e nas laterais.
-        <br>
-        5°- Coloque o cinto de segurança, que esteja bem ajustado ao corpo.
-        <br><br>
-        ° Justificativa: A importância de fechar a porta, ajuste do banco, retrovisores (interno e externos), e colocar o
-        cinto de segurança para uma postura ideal.  
-    </p>
-    <br><br>
-        <p>Segundo Passo:</p>
-        <br>
-        Repetição 2x
-        <br><br>
-        1°- Observe o painel de instrumentos. Certifique-se se está em ponto neutro.
-        <br>
-        2°- Insira a chave na ignição. Gire a chave uma vez para ligar algumas luzes do painel de instrumentos.
-        <br>
-        3°- Gire a chave,  mais um vez e segure por 2 á 3 segundos e solte para dar partida no motor principal.
-        <br>
-        4°- E assim veículo em funcionamento.
-        <br><br>
-        ° Justificativa: Enfatiza com o painel e verifição algumas luzes antes de dar a partidar. Detalha 
-        processo de quando girar e soltar a chave.   
-    </p>
-                </section>
-            </main>
+                    </div></form>
+                    <h2>Instruções de Condução</h2><br>
+                    <h3>Primeiro Passo:</h3><br>
+                    <audio controls>
+                        <source src="/login/system/music/Test1.mp3"
+                        type="audio/mpeg">
+                        <source src="/login/system/music/Test1.ogg"
+                        type="audio/ogg">
+                        <source src="/login/system/music/Test1.wav"
+                        type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <form>
+                    <ol type="1">
+                    <li>Entrou no veículo, fecha a porta.</li>
+                    <li>Ajuste o banco.</li>
+                    <li>Retrovisores.</li>
+                    <li>Espelho (interno).</li>
+                    <li>Coloque o cinto de segurança.</li><br>   
+                    <ul>
+                        <li>Justificativa: É bom lembrar, fechar a porta, ajuste do banco, retrovisores (externos e interno) e colocar
+                        cinto de segurança são de grande importância.</li>
+                    </ul>
+                </ol>
+                <h3>Segundo Passo:</h3><br>
+                    <audio controls>
+                        <source src="/login/system/music/Test2.mp3"
+                        type="audio/mpeg">
+                        <source src="/login/system/music/Test2.ogg"
+                        type="audio/ogg">
+                        <source src="/login/system/music/Test2.wav"
+                        type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                <ol type="1">
+                    <li>Observa-se o painel de instrumentos.</li>
+                    <li>Certifique-se se está em ponto neutro.</li>
+                    <li>Alguns modelos de veículos precisam, pressionar primeiro o pedal da embreagem antes dar partida no motor principal.</li>
+                    <li>Insira a chave na ignição, gire a chave para ligar sistema eletro/eletrônico do veículo.</li>
+                    <li>No segundo giro, segura um curto período 2 a 3 segundos e solte, para dar partida no motor principal.</li>
+                    <li>Assim, veículo está funcionando.</li><br>
+                    <ul>
+                        <li>Enfatiza com o painel e verifica algumas luzes antes de dar a partida no motor. Detalhe quando girar a chave de ignição solte para não comprometer momento nenhum de                                ligar o veículo.</li>
+                    </ul>
+                </ol>
+                <h3>Terceiro Passo:</h3>
+                <ol type="1">
+                    <p>Aluno, presta bem atenção!</p><br>
+                	<li>Vamos executar alguns procedimentos.</li><br>
+                    <p>Executa.</p><br>
+                    <li>Pressiona o pedal da embreagem e mantém.</li><br>
+                    <p>Após isso.</p><br>
+                    <li>Colocar a primeira marcha.</li><br>
+                    <p>Em seguida.</p><br>
+                    <li>Pressiona o pedal do freio e mantém.</li><br>
+                    <p>Próximo passo.</p><br>
+                    <li>Aciona a seta para esquerda, com intenção de sair.</li>
+                    <li>Com as duas mãos ao volante.</li>
+                    <li>Direciona-se olhar para o retrovisor do lado esquerdo.</li>
+                    <li>Certifique-se que não há veículos, pedestres etc.</li><br>
+                    <p>Atenção.</p><br>
+                    <li>Observa o trajeto no qual a superfície é plana? aclive? (subida) ou declive? (decida).</li>
+                    <li>Supondo que a superfície é “Plana”.</li>
+                    <li>Solta o freio de estacionamento.</li>
+                    <li>Solta o pedal do freio, gradativamente.</li><br>
+                    <p>Assim o veículo está móvel.</p><br>
+                    <p>Prossegue.</p><br>
+                    <li>Gire o volante para o lado esquerdo suficiente, para poder sair com veículo.</li>
+                    <li>Solta o pedal da embreagem bem devagar.</li>
+                    <li>Não precisa acelerar.</li><br>
+                    <p>Após você ter soltado o pedal do freio e o pedal da embreagem?</p><br>
+                    <li>O veículo está em movimento.</li><br>
+                    <ul>
+                        <li>Esses foram os procedimentos iniciais para colocar o veículo em movimento, desde ação do condutor, atenção e os cuidados para não comprometer a sua saída.</li>
+                    </ul>
+                </ol>
+            </form>
+        </section>
+    </main>
+</div>
     <footer>Rodapé</footer>
-    <script type="text/javascript">
-        openMenu.addEventListener('click', () => {
+     <script>
+             openMenu.addEventListener('click', () => {
             menu.style.display = 'flex'
             menu.style.right = (menu.offsetWidth * -1) + 'px'
 
@@ -102,7 +139,6 @@ include_once '../restrictedArea/protect.php';
                 menu.removeAttribute('style')
                 openMenu.removeAttribute('style')
             }, 200)
-            
         })
     </script>
 </body>
